@@ -1,0 +1,5 @@
+label {
+    display: block;
+}
+
+@media (min-width: 30em) {}
