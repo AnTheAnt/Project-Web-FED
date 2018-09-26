@@ -32,7 +32,7 @@ body {
 
 .navigation > a {
     display: inline-block;
-    vertical-align: left;
+    vertical-align: top;
     margin-right: 20px;
     height: 80px;
     line-height: 80px;
@@ -88,7 +88,7 @@ p {
 }
 
 form {
-    width: : 80%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -100,5 +100,5 @@ article {
 img {
     width: 20%;
     width: calc(50% + 2em);
-    margin: 0 em;
+    margin: 0;
 }
