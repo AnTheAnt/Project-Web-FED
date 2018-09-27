@@ -6,69 +6,87 @@
 */
 
 body {
-    margin: 0 auto;
-    width: 1027px;
-    font-family: sans-serif, Segoe UI;
-    font-size: 1vw;
-    border: 1px;
-    background-color: #EAEDEE;
-}
-
-
-.navigation {
     width: 100%;
-    height: 80px;
-    background-color: white;
-}
-
-.logoheader {
-    vertical-align: top;
-    width: 90px;
-    height: 90px;
-    margin-right: 20px;
-    margin-top: 15px;
-    padding-left: 0px;
-}
-
-.navigation > a {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 20px;
-    height: 80px;
-    line-height: 80px;
-}
-
-.zoekbutton {
-    background-color: #1E5180;
-}
-
-.zoek {
-    margin-top: 40px;
-}
-
-
-li,
-a {
-    display: inline;
-    text-decoration: none;
-    font-family: sans-serif, Archive;
-    color: black;
+    font-family: sans-serif, Segoe UI;
+    font-size: 1em;
+    line-height: 1.5em;
+    background-color: #EAEDEE;
     padding: 2em;
 }
 
-a:hover {
-    color: #0C2B42;
+header {
+    background-color: white;
 }
 
+
+header li {
+    font-size: 1em;
+    color: gray;
+    display: inline;
+    background-color: white;
+}
+
+header a {
+    color: grey;
+    text-decoration: none;
+    padding: 3em;
+}
+
+
+
+.logoheader {
+    vertical-align: top;
+    width: 10em;
+    height: 10em;
+    display: inline;
+}
+
+a:hover {
+    color: #1F4C9C;
+}
+
+
+[type=search] {
+    background: white;
+    margin: 3em;
+    width: 20em;
+
+}
+
+.zoekbutton {
+    background-color: #E88B3C;
+    display: inline;
+}
+
+.banner {
+    background-image: url(images/beach-beach-chair-daylight-556961%20kopie.jpg);
+    background-size: cover;
+    height: 60em;
+}
+
+
+.eersteverhaal {
+    margin: 3em;
+    background-color: white;
+    opacity: 0.8;
+
+}
 
 
 h1 {
-    font-family: sans-serif, Archive;
-    font-size: 2vw;
+    font-size: 2em;
+    color: black;
+    padding: 1em;
+    background-color: #E88B3C;
+    color: white;
+    display: block;
 }
 
 h2 {
-    font-size: 2vw;
+    font-size: 2em;
+    color: black;
+    display: inline-block;
+
 
 }
 
@@ -76,29 +94,12 @@ button {
     text-decoration: none;
     color: white;
     font-family: sans-serif, Archive;
-    font-size: 2vm;
-    display: inline-block;
-    padding: .5em;
+    font-size: 1.5em;
+    display: inline;
     background-color: #F3A83B;
     text-align: center;
 }
 
 p {
-    font-size: 1vw;
-}
-
-form {
-    width: 80%;
-    margin: 0 auto;
-}
-
-section,
-article {
-    display: block;
-}
-
-img {
-    width: 20%;
-    width: calc(50% + 2em);
-    margin: 0;
+    font-size: 1em;
 }
