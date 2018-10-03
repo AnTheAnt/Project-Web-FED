@@ -12,18 +12,22 @@ body {
     line-height: 1.5em;
     background-color: #EAEDEE;
     padding: 2em;
+
 }
 
 header {
     background-color: white;
 }
 
+nav:first-of-type {
+    background-color: white;
+}
 
-header li {
+
+header:first-of-type li {
     font-size: 1em;
     color: gray;
     display: inline;
-    background-color: white;
 }
 
 header a {
@@ -32,6 +36,9 @@ header a {
     padding: 3em;
 }
 
+ul {
+    list-style: none;
+}
 
 
 .logoheader {
@@ -65,27 +72,17 @@ a:hover {
 }
 
 
-.eersteverhaal {
-    margin: 3em;
-    background-color: white;
-    opacity: 0.8;
-
-}
-
-
 h1 {
     font-size: 2em;
     color: black;
     padding: 1em;
     background-color: #E88B3C;
     color: white;
-    display: block;
 }
 
 h2 {
     font-size: 2em;
     color: black;
-    display: inline-block;
 
 
 }
@@ -102,4 +99,14 @@ button {
 
 p {
     font-size: 1em;
+    background-color: white;
+}
+
+
+
+article {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
 }
