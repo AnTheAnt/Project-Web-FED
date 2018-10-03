@@ -1,10 +1,3 @@
-/* label {
-    display: block;
-}
-
-@media (min-width: 30em) {}
-*/
-
 body {
     width: 100%;
     font-family: sans-serif, Segoe UI;
@@ -12,8 +5,9 @@ body {
     line-height: 1.5em;
     background-color: #EAEDEE;
     padding: 2em;
-
 }
+
+
 
 header {
     background-color: white;
@@ -68,24 +62,40 @@ a:hover {
 .banner {
     background-image: url(images/beach-beach-chair-daylight-556961%20kopie.jpg);
     background-size: cover;
-    height: 60em;
+    position: relative;
 }
-
 
 h1 {
     font-size: 2em;
     color: black;
-    padding: 1em;
-    background-color: #E88B3C;
-    color: white;
+    padding: 3em;
+
+
 }
+
+h1::before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    top: 0;
+    width: 14em;
+    clip-path: polygon(58% 0, 100% 0%, 100% 100%, 0% 100%);
+    background-color: #E88B3C;
+    opacity: 0.8;
+
+}
+
 
 h2 {
     font-size: 2em;
-    color: black;
-
-
+    color: white;
+    background-color: #A93635;
+    padding: 3em;
+    opacity: 0.9;
 }
+
 
 button {
     text-decoration: none;
@@ -107,6 +117,13 @@ p {
 article {
     background-color: white;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1em;
+    grid-template-columns: 20em;
+    grid-gap: 2em;
+}
+
+
+@media (max-width: 28em) {
+    article {
+        width: 17em;
+    }
 }
