@@ -59,34 +59,71 @@ a:hover {
     display: inline;
 }
 
+
+.banner::after {
+    content: "";
+    position: absolute;
+    display: inline;
+    right: 0;
+    height: 100%;
+    top: 0;
+    width: 100%;
+    clip-path: polygon(55% 0, 100% 0%, 100% 100%, 0% 100%);
+    opacity: 0.8;
+    background: #E88B3C;
+    z-index: 0;
+
+}
+
 .banner {
     background-image: url(images/beach-beach-chair-daylight-556961%20kopie.jpg);
     background-size: cover;
     position: relative;
+
+}
+
+.banner * {
+    z-index: 10;
+    position: relative;
+    text-align: left;
 }
 
 h1 {
     font-size: 2em;
-    color: black;
-    padding: 3em;
-
-
-}
-
-h1::before {
-    content: "";
-    display: block;
-    position: absolute;
-    right: 0;
-    height: 100%;
-    top: 0;
-    width: 14em;
-    clip-path: polygon(58% 0, 100% 0%, 100% 100%, 0% 100%);
-    background-color: #E88B3C;
-    opacity: 0.8;
+    color: white;
+    text-align: left;
+    margin-left: 10em;
+    padding-bottom: 3em;
 
 }
 
+
+/*h1::after {
+content: "";
+display: block;
+position: absolute;
+right: 0;
+height: 100%;
+top: 0;
+width: 14em;
+clip-path: polygon(58% 0, 100% 0%, 100% 100%, 0% 100%);
+opacity: 0.6;
+background: #E88B3C;
+}*/
+
+@media (max-width: 50em) {
+    h1 {
+        text-align: center;
+        padding: 1.1em;
+    }
+}
+
+@media (max-width: 28em) {
+    h1 {
+        text-align: center;
+        padding-left: 0.1em;
+    }
+}
 
 h2 {
     font-size: 2em;
