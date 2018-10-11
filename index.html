@@ -15,72 +15,40 @@
     <header>
         <img class="logoheader" src="images/nieuwe%20DFDS%20logo%20kopie.png" alt="Link naar homepage"> <a href="Home"></a>
 
-
         <nav>
-
             <ul>
-                <li> <a href="Inlog.html"> Inloggen2 </a></li>
+                <li> <a href="Inlog.html"> Inloggen </a></li>
                 <li><a href="index.html"> Favorieten </a></li>
-                <li> <a href="">Leestijd</a></li>
-                <li> <a href=""> Sferen </a></li>
             </ul>
         </nav>
-
-
     </header>
 
 
-
-
-
-    <!--  <section>
-        <p>Filter opties</p>
-
-        <form action="post ">
-            <fieldset>
-                <legend>Sferen</legend>
-                <label>
-            <input id="Vrolijke " type="checkbox "> Vrolijke verhalen
-            </label>
-                <label>
-            <input id="Duistere " type="checkbox "> Duistere verhalen
-            </label>
-                <input id="Droge " type="checkbox "> Droge verhalen
-            </fieldset>
-        </form>
-
-        <p>Sorteer opties</p>
-        <form action="post ">
-            <fieldset>
-                <legend>Leestijd</legend>
-                <label>
-            <input name="sorteren " type="radio "> Vrolijke verhalen
-            </label>
-
-                <label>
-            <input name="sorteren " type="radio "> Duistere verhalen
-            </label>
-
-                <input name="sorteren " type="radio "> Droge verhalen
-
-                <input type="range " min="1 " max="100 " value="50 " class="slider "> leestijd
-
-            </fieldset>
-        </form>
-
-
-        <button type="submit ">Vind</button>
-    </section> -->
-
-
-
     <header class="banner">
-        <form method="submit" action="zoekresultaten.html">
-            <input type="search" placeholder="Zoek een verhaal... ">
-            <button class="zoekbutton" type="submit">Zoek</button>
+        <form action="post ">
+            <fieldset>
+                <legend>Filteren</legend>
+                <label>
+                 <input type="range" min="1" max="100" value="50" class="slider">
+                </label>
+                <input name="sorteren" type="radio"> Droevige verhalen
+                <input name="sorteren" type="radio"> Duisteren verhalen
+                <input name="sorteren" type="radio"> Droge verhalen
+                <input name="sorteren" type="radio"> Grappige verhalen
+                <input name="sorteren" type="radio"> Vrolijke verhalen
+            </fieldset>
+
+            <button type="submit">Toon resultaten</button>
+
+            <form action="zoekresultaten.html">
+                <input type="search" placeholder="Zoek een verhaal... ">
+                <button class="zoekbutton" type="submit">Zoek</button>
+            </form>
         </form>
 
-        <h1>99 Verhalen voor op Reis</h1>
+        <h1>Visueel opvallende verhalen</h1>
+
+        <button type="submit"> Lees nu</button>
 
     </header>
 
