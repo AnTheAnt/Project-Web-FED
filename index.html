@@ -13,7 +13,7 @@
 <body>
 
     <header>
-        <img class="logoheader" src="images/nieuwe%20DFDS%20logo%20kopie.png" alt="Link naar homepage"> <a href="Home"></a>
+        <img class="logoheader" src="images/nieuwe%20DFDS%20logo%20kopie.png" alt="Link naar homepage">
 
         <nav>
             <ul>
@@ -25,26 +25,41 @@
 
 
     <header class="banner">
-        <form action="post ">
+        <form>
             <fieldset>
-                <legend>Filteren</legend>
-                <label>
-                 <input type="range" min="1" max="100" value="50" class="slider">
-                </label>
-                <input name="sorteren" type="radio"> Droevige verhalen
-                <input name="sorteren" type="radio"> Duisteren verhalen
-                <input name="sorteren" type="radio"> Droge verhalen
-                <input name="sorteren" type="radio"> Grappige verhalen
-                <input name="sorteren" type="radio"> Vrolijke verhalen
+                <legend>
+                    Filteren
+                </legend>
+
+                <label> 1min   </label>
+                <input type="range" min="1" max="100" value="50" class="slider"> 8min
+
+
+
+                <input type="checkbox" name="sorteren1" value="Droevige verhalen">
+                <label for="sorteren1"> Droevige verhalen </label>
+
+                <input type="checkbox" name="sorteren2" value="Duisteren verhalen">
+                <label for="sorteren2">Duisteren verhalen</label>
+
+                <input type="checkbox" name="sorteren3" value="Droge verhalen">
+                <label for="sorteren3"> Droge verhalen</label>
+
+                <input type="checkbox" name="sorteren4" value="Grappige verhalen">
+                <label for="sorteren4">Grappige verhalen</label>
+
+                <input type="checkbox" name="sorteren5" value="Vrolijke verhalen">
+                <label for="sorteren5">Vrolijke verhalen</label>
+
+                <button type="submit">Toon resultaten</button>
             </fieldset>
-
-            <button type="submit">Toon resultaten</button>
-
-            <form action="zoekresultaten.html">
-                <input type="search" placeholder="Zoek een verhaal... ">
-                <button class="zoekbutton" type="submit">Zoek</button>
-            </form>
         </form>
+
+        <form action="zoekresultaten.html" method="post">
+            <input type="text" placeholder="Zoek een verhaal... " id=zoek>
+            <button type="search">Zoek</button>
+        </form>
+
 
         <h1>Visueel opvallende verhalen</h1>
 
@@ -54,77 +69,85 @@
 
 
 
+
+    <h2>Meest gelezen verhalen</h2>
+
+
+
     <section>
-        <h2>Meest gelezen verhalen</h2>
+        <article>
+            <header>
+                <h3>#6 Beroemd<a href=" "></a></h3>
+
+                <img src="images/verhalenvormgegeven/Beroemd-0.1.jpg" alt="">
+
+            </header>
+
+
+            <p>Bus 21, rond het middaguur. Halte Centraal Station. Mijn zoon slaapt in zijn kinderwagen.
+                <a href=" ">Lees verder</a></p>
+        </article>
+
+
+
+        <article>
+            <header>
+                <h3>#6 Beroemd<a href=" "></a></h3>
+
+                <img src="images/verhalenvormgegeven/Beroemd-0.1.jpg" alt="">
+
+            </header>
+
+
+            <p>Bus 21, rond het middaguur. Halte Centraal Station. Mijn zoon slaapt in zijn kinderwagen.
+                <a href=" ">Lees verder</a></p>
+        </article>
+
+
+
+
+        <article>
+            <header>
+                <h3>#6 Beroemd<a href=" "></a></h3>
+
+                <img src="images/verhalenvormgegeven/Beroemd-0.1.jpg" alt="">
+
+            </header>
+
+
+            <p>Bus 21, rond het middaguur. Halte Centraal Station. Mijn zoon slaapt in zijn kinderwagen.
+                <a href=" ">Lees verder</a></p>
+        </article>
+
+
+
+
+
+        <article>
+            <header>
+                <h3>#6 Beroemd<a href=" "></a></h3>
+
+                <img src="images/verhalenvormgegeven/Beroemd-0.1.jpg" alt="">
+
+            </header>
+
+
+            <p>Bus 21, rond het middaguur. Halte Centraal Station. Mijn zoon slaapt in zijn kinderwagen.
+                <a href=" ">Lees verder</a></p>
+        </article>
+
+
+
+
+
     </section>
 
 
-    <article>
-        <header>
-            <h3>#3 Notitie</h3>
-        </header>
-
+    <header>
+        <h3>Aanbevolen Verhalen<a href=" "></a></h3>
         <img src="" alt="">
+    </header>
 
-        <footer>
-            <meta>
-        </footer>
-
-
-        <p>Bus 21, rond het middaguur. Halte Centraal Station. Mijn zoon slaapt in zijn kinderwagen. Ik loop langs de winderige bouwputten naar de Openbare Bibliotheek. Voor de trap van de bibliotheek klampt een vrouw mij aan. Zwart krullend haar. In stokbrodenengels vraagt ze waar het postkantoor is. Ik verwijs haar naar de Raadhuisstraat. Een auto met een Frans nummerbord rijdt achteruit rijdend weg. De vrouw zwaait, maar krijgt geen contact met de bestuurder. Ze rent er achteraan.
-            <a href=" ">Lees verder</a></p>
-
-    </article>
-    <button type="button"> Lees nu </button>
-
-
-    <article>
-        <header>
-            <h3>#6 Hardboiled<a href=" "></a></h3>
-            <img src="" alt="">
-        </header>
-
-        <p>Bus 21, rond het middaguur. Halte Centraal Station. Mijn zoon slaapt in zijn kinderwagen. Ik loop langs de winderige bouwputten naar de Openbare Bibliotheek. Voor de trap van de bibliotheek klampt een vrouw mij aan. Zwart krullend haar. In stokbrodenengels vraagt ze waar het postkantoor is. Ik verwijs haar naar de Raadhuisstraat. Een auto met een Frans nummerbord rijdt achteruit rijdend weg. De vrouw zwaait, maar krijgt geen contact met de bestuurder. Ze rent er achteraan.
-            <a href=" ">Lees verder</a></p>
-    </article>
-    <button type="button">Lees nu</button>
-
-
-    <article>
-        <header>
-            <h3><a href=" "></a></h3>
-            <img src="" alt="">
-        </header>
-        <p>Bus 21, rond het middaguur. Halte Centraal Station. Mijn zoon slaapt in zijn kinderwagen. Ik loop langs de winderige bouwputten naar de Openbare Bibliotheek. Voor de trap van de bibliotheek klampt een vrouw mij aan. Zwart krullend haar. In stokbrodenengels vraagt ze waar het postkantoor is. Ik verwijs haar naar de Raadhuisstraat. Een auto met een Frans nummerbord rijdt achteruit rijdend weg. De vrouw zwaait, maar krijgt geen contact met de bestuurder. Ze rent er achteraan.
-            <a href=" ">Lees verder</a></p>
-    </article>
-
-    <button type="button">Lees nu</button>
-
-
-
-    <article>
-        <header>
-            <h3><a href=" "></a></h3>
-            <img src="" alt="">
-        </header>
-        <p>Bus 21, rond het middaguur. Halte Centraal Station. Mijn zoon slaapt in zijn kinderwagen. Ik loop langs de winderige bouwputten naar de Openbare Bibliotheek. Voor de trap van de bibliotheek klampt een vrouw mij aan. Zwart krullend haar. In stokbrodenengels vraagt ze waar het postkantoor is. Ik verwijs haar naar de Raadhuisstraat. Een auto met een Frans nummerbord rijdt achteruit rijdend weg. De vrouw zwaait, maar krijgt geen contact met de bestuurder. Ze rent er achteraan.
-            <a href=" ">Lees verder</a></p>
-    </article>
-
-    <button type="button">Lees nu</button>
-
-
-
-
-
-
-    <section>
-        <header>
-            <h3>Aanbevolen Verhalen<a href=" "></a></h3>
-            <img src="" alt="">
-        </header>
-    </section>
 
     <article>
         <a href=" "></a>
@@ -132,6 +155,7 @@
         <a href=" "></a>
         <a href=" "></a>
     </article>
+
 
 
 
