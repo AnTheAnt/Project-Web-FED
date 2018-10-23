@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="stylesheet2.css" type="text/css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Verhalen Website</title>
@@ -13,8 +13,9 @@
 <body>
 
     <header>
-        <img src="images/logodfds.png" alt="some text">
         <nav>
+            <img class="logoheader" src="images/nieuwe%20DFDS%20logo%20kopie.png" alt="Link naar homepage">
+
             <ul>
                 <li><a href="index.html"> Home </a></li>
             </ul>
@@ -22,11 +23,23 @@
     </header>
 
 
-
-    <h2>Inlog pagina</h2>
-
-
     <section>
+
+        <form action="/action_page.php" method="post">
+            <fieldset>
+                <legend>Inloggen</legend>
+                <label for="name">Gebruikersnaam:</label>
+                <input type="text" name="user_name" />
+                <label for="name">Wachtwoord:</label>
+                <input type="password" name="user_password" />
+
+
+                <form method="get" action="index.html">
+                    <button type="submit">Login</button>
+                </form>
+
+            </fieldset>
+        </form>
 
         <form action="/action_page.php" method="post">
             <fieldset>
@@ -53,22 +66,6 @@
 
 
 
-        <form action="/action_page.php" method="post">
-            <fieldset>
-                <legend>Inloggen</legend>
-                <label for="name">Gebruikersnaam:</label>
-                <input type="text" name="user_name" />
-                <label for="name">Wachtwoord:</label>
-                <input type="password" name="user_password" />
-
-
-                <form method="get" action="index.html">
-                    <button type="submit">Login</button>
-                </form>
-
-            </fieldset>
-        </form>
-
         <form action="/action_page">
             <fieldset>
                 <legend>Wachtwoord vergeten?</legend>
@@ -91,9 +88,12 @@
 
 
 
-    <footer id="e-mail">
-        Voor vragen mail dan:
-        <a href="mailto:annapyea@gmail.com">Stuur een e-mail</a>
+    <footer>
+        <ul>
+
+            <li>© DFDS 2018</li>
+
+        </ul>
     </footer>
 
 </body>

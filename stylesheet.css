@@ -1,39 +1,40 @@
 body {
     width: 100%;
-    font-family: sans-serif, Segoe UI;
-    font-size: 1em;
-    line-height: 1.5em;
+    font-family: "Segoe UI", "Lucida Grande", "Helvetica Neue", Arial, sans-serif;
     background-color: #EAEDEE;
-    margin: 1em;
-
+    margin: auto;
+    margin-top: 1em;
 }
 
-nav:first-of-type {
+
+nav {
     background-color: white;
 }
 
 
 nav li {
     display: inline-flex;
+
+
 }
 
 
 
-li > a {
+li a {
     color: grey;
     text-decoration: none;
     padding: 2em;
-    font-size: 1em;
+    font-size: 1.2em;
     list-style: none;
+
 }
 
 
 .logoheader {
-    vertical-align: top;
-    width: 10em;
-    height: 10em;
-    display: flex;
-
+    float: top;
+    width: 100px;
+    height: 100px;
+    padding-left: 70px;
 }
 
 a:hover {
@@ -41,146 +42,155 @@ a:hover {
 }
 
 form {
+    font-size: 1.2em;
+    font-family: "Segoe UI", "Lucida Grande", "Helvetica Neue", Arial, sans-serif;
     display: flex;
-    flex-flow: wrap;
-    margin-left: auto;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    z-index: 10;
+    overflow: hidden;
 }
-
 
 fieldset {
-    display: flex;
+    display: inline-flex;
     border: none;
-    background: white;
     padding: 2em;
-    margin-left: 1.5em;
+    background-color: white;
     margin-right: auto;
-    margin-bottom: 2em;
 }
-
-
-input[type="checkbox"] {
-    opacity: 0;
-}
-
-input[type=checkbox] + label::before {
-    content: "";
-    display: inline-flex;
-    height: 16px;
-    width: 16px;
-    border: 1px solid;
-}
-
-input[type=checkbox] + label::after {
-    content: "";
-    display: inline-flex;
-    height: 6px;
-    width: 9px;
-    border-left: 2px solid;
-    border-bottom: 2px solid;
-    transform: rotate(-45deg);
-}
-
-
-input[type=checkbox] + label {
-    position: relative;
-}
-
-input[type=checkbox] + label::before,
-input[type=checkbox] + label::after {
-    position: absolute;
-}
-
-
-/*Outer-box*/
-
-input[type=checkbox] + label::before {
-    top: 3px;
-}
-
-/*Checkmark*/
-
-input[type=checkbox] + label::after {
-    left: 4px;
-    top: 7px;
-}
-
-/*Hide the checkmark by default*/
-
-input[type="checkbox"] + label::after {
-    content: none;
-}
-
-/*Unhide the checkmark on the checked state*/
-
-input[type="checkbox"]:checked + label::after {
-    content: "";
-}
-
 
 
 legend {
-    font-size: 1.5em;
+    padding-top: 3em;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
-
-
-[type="range"] {
-    width: 20em;
-    background-color: gray;
-    -webkit-appearance: ;
+label {
+    width: 100%;
 }
 
-[type=submit] {
-    margin: .33em;
-    margin-top: 2em;
+
+[type=range] {
+    width: 100%;
 }
 
+
+
+button[type=submit] {
+    margin-top: 1em;
+    color: white;
+    height: 2em;
+    font-family: s"Segoe UI", "Lucida Grande", "Helvetica Neue", Arial, sans-serif;
+    font-size: 1em;
+    font-weight: 550;
+    text-align: center;
+    background-color: #E78B3B;
+    display: block;
+}
+
+@media (max-width: 24em) {
+    button[type=submit] {
+        font-size: .7em;
+
+    }
+}
+
+
+
+button[type=button] {
+    font-weight: 550;
+    background-color: #E78B3B;
+    padding: .6em;
+}
+
+
+button:hover,
+button:focus {
+    background-color: whitesmoke;
+    color: #204F80;
+    text-align: center;
+    font-weight: 550;
+}
+
+button:focus {
+    outline: 2px solid #204F80;
+    outline-offset: -4px;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+button::after {
+    content: "";
+    font-family: icomoon;
+    vertical-align: middle;
+    display: inline;
+    margin-left: 1.2em;
+
+}
+
+button[type=search] {
+    color: white;
+    display: inline-flex;
+    height: 2em;
+    font-family: "Segoe UI", "Lucida Grande", "Helvetica Neue", Arial, sans-serif;
+    font-size: 1em;
+    font-weight: 550;
+    text-align: center;
+    background-color: #E78B3B;
+}
+
+@media (max-width: 25em) {
+    button[type=search] {
+        display: inline;
+        width: 6em;
+        font-size: 1em;
+
+    }
+}
 
 #zoek {
     background-color: white;
-    width: 40em;
-    padding: .5em;
-    position: relative;
-    flex-flow: nowrap;
     display: inline-flex;
-    margin-left: 3em;
-    margin-top: 10em;
-
+    width: 40em;
+    height: 2em;
+    padding: .5em;
+    margin-top: 6em;
+    margin-left: 2em;
 }
 
 
-@media (max-width: 35em) {
+
+@media (max-width: 44em) {
+    #zoek {
+        width: 35em;
+        height: 2em;
+        margin-left: 2em;
+    }
+}
+
+@media (max-width: 40em) {
     #zoek {
         width: 30em;
-        margin-left: 0.5em;
-        padding-bottom: -9em;
+        height: 2em;
+        margin-top: 2em;
+        margin-left: 2.4em;
+    }
+}
 
-
+@media (max-width: 25em) {
+    #zoek {
+        width: 17em;
+        height: 1.5em;
+        margin-top: 2em;
+        margin-left: 2.4em;
     }
 }
 
 
-
-[type=search] {
-    margin-left: 1em;
-    margin-top: 6.7em;
-    flex-flow: nowrap;
-    background: #E78B3B;
-}
-
-
-@media (max-width: 26.2em) {
-    [type=search] {
-        margin-left: 0.4em;
-        margin-top: 1em;
-        flex-flow: nowrap;
-        font-size: 1.2em;
-        font-weight: bold;
-        background: #E78B3B;
-    }
-}
-
+/* clipping path not supported in safari or firefox. */
 
 .banner::after {
     content: "";
@@ -188,30 +198,42 @@ legend {
     right: 0;
     height: 100%;
     top: 0;
-    width: 40em;
+    width: 45%;
+    -webkit-clip-path: polygon (75% 0%, 100% 0%, 100% 100%, 9% 100%);
     clip-path: polygon(75% 0%, 100% 0%, 100% 100%, 9% 100%);
     opacity: 0.87;
     background: #E78B3B;
     z-index: 0;
 }
 
+
+
 /* Media queries om het clipping path zo neer te zetten dat het niet in de weg komt van de ander formulieren, responsive tot en met iphone 5s.  */
 
-@media (max-width: 45em) {
+@media (max-width: 75em) {
     .banner::after {
+        content: "";
         width: 100%;
-        padding-top: 8.2em;
-        -webkit-clip-path: inset(66% 0% 15% 0%);
-        clip-path: inset(66% 0% 15% 0%);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        padding-top: 9em;
+        -webkit-clip-path: inset(61% 0% 17.8% 0%);
+        clip-path: inset(61% 0% 17.8% 0%);
 
     }
 }
 
 @media (max-width: 36em) {
     .banner::after {
+        content: "";
+        top: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
         padding-top: 8.2em;
-        -webkit-clip-path: inset(66% 0% 15% 0%);
-        clip-path: inset(66% 0% 14.6% 0%);
+        -webkit-clip-path: inset(60% 0% 13.1% 0%);
+        clip-path: inset(60% 0% 13.1% 0%);
         background-color: aqua;
 
     }
@@ -219,9 +241,14 @@ legend {
 
 @media (max-width: 26.2em) {
     .banner::after {
+        content: "";
+        top: 0;
+        bottom: 0;
+        top: 0;
+        position: absolute;
         padding-top: 8.2em;
-        -webkit-clip-path: inset(66% 0% 15% 0%);
-        clip-path: inset(66% 0% 12.1% 0%);
+        -webkit-clip-path: inset(60% 0% 18.1% 0%);
+        clip-path: inset(60% 0% 18.1% 0%);
         background-color: red;
 
     }
@@ -232,7 +259,28 @@ legend {
     background-image: url(images/beach-beach-chair-daylight-556961%20kopie.jpg);
     background-size: cover;
     position: relative;
+    background-color: #1E2B34;
+    background-blend-mode: screen;
+    border-right: 4em solid #EAECEE;
+    border-left: 4em solid #EAECEE;
 
+}
+
+@media (max-width: 29em) {
+    .banner {
+        border-right: 1em solid #EAECEE;
+        border-left: 1em solid #EAECEE;
+
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .banner {
+        border-right: 1em solid #EAECEE;
+        border-left: 1em solid #EAECEE;
+        ;
+
+    }
 }
 
 .banner * {
@@ -241,40 +289,87 @@ legend {
 
 }
 
-h1 {
-    font-size: 2.3em;
-    font-family: DFDS-Bold, sans-serif, ;
-    color: white;
-    padding-bottom: 1em;
-    text-align: right;
-    padding-right: 1em;
+main {
+    border-right: 4em solid #EAECEE;
+    border-left: 4em solid #EAECEE;
+
+}
+
+@media (max-width: 30em) {
+    main {
+        border-right: 1em solid #EAECEE;
+        border-left: 1em solid #EAECEE;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    main {
+        border-right: 1em solid #EAECEE;
+        border-left: 1em solid #EAECEE;
+        ;
+
+    }
 }
 
 
-/*h1::after {
-content: "";
-display: block;
-position: absolute;
-right: 0;
-height: 100%;
-top: 0;
-width: 14em;
-clip-path: polygon(58% 0, 100% 0%, 100% 100%, 0% 100%);
-opacity: 0.6;
-background: #E88B3C;
-}*/
 
-@media (max-width: 50em) {
+
+h1 {
+    font-size: 2.4em;
+    font-family: DFDS-Bold, sans-serif;
+    font-weight: 700;
+    text-align: right;
+    line-height: 1.01;
+    color: white;
+    text-transform: uppercase;
+    padding-right: 2em;
+}
+
+h1 span {
+    display: block;
+}
+
+button[type=button] {
+    margin-left: auto;
+    flex-direction: column;
+    color: white;
+    display: flex;
+
+}
+
+
+h1 span::before {
+    content: attr(data-text);
+    background: #E78B3B;
+    padding: 1px 8px;
+    opacity: .1;
+}
+
+
+@media (max-width: 75em) {
     h1 {
         text-align: center;
-        padding: 1.1em;
+        margin: auto;
+        font-family: DFDS-Bold, sans-serif;
+        padding-top: 2em;
+        font-weight: 700;
+        line-height: 1em;
     }
 }
 
 @media (max-width: 28em) {
     h1 {
+        margin: 1em;
+        margin-right: 1em;
+        font-size: 1.6em;
+        font-weight: 900;
         text-align: center;
-        padding-left: 0.1em;
+    }
+}
+
+@media (max-width: 22em) {
+    h1 span {
+        text-align: left;
     }
 }
 
@@ -292,40 +387,34 @@ section {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    padding: 1em;
+    margin: auto;
+
+
 }
 
 article {
-    flex-direction: row;
-    min-width: 17em;
+    min-width: 19.8em;
     max-width: 17em;
-    padding: 1em;
-    margin: 2em;
+    padding: .1em;
+    margin: 1em;
 }
+
 
 
 
 @media (max-width: 28) {
     article {
-        min-width: 17em;
-        padding: 1em;
-        margin: 1em;
+        min-width: 20em;
+        padding: .1em;
+        margin: .1em;
     }
 }
 
-button {
-    text-decoration: none;
-    color: white;
-    font-family: sans-serif, Archive;
-    font-size: 1em;
-    background-color: #F3A83B;
-    display: flex;
-}
 
 p {
     font-size: 1em;
-    flex-direction: row;
-    justify-content: space-around;
+    background-color: white;
+    padding: 1.1em;
 }
 
 
@@ -333,4 +422,62 @@ img {
     width: 100%;
     height: 100%;
     flex-direction: row wrap;
+}
+
+figure {
+    background-image: url(images/verhalenvormgegeven/Beroemd-0.1.jpg);
+    background-size: 100%;
+    height: 15em;
+    margin-left: -.01em;
+    position: relative;
+    margin-bottom: -1em;
+    width: 20em;
+
+}
+
+@media (max-width 35em) {
+    figure {
+        width: 70em;
+
+    }
+}
+
+figure * {
+    z-index: 10;
+    position: relative;
+
+}
+
+figure::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    height: 100%;
+    top: 0;
+    width: 220%;
+    -webkit-clip-path: polygon (75% 0%, 100% 0%, 100% 100%, 9% 100%);
+    clip-path: polygon(85% 0%, 100% 0%, 100% 100%, 65% 100%);
+    opacity: 0.7;
+    background: #36214B;
+    z-index: 0;
+}
+
+figure:hover {
+    opacity: .95;
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+}
+
+h3 {
+    text-align: right;
+    color: white;
+    padding-top: 8em;
+    font-size: 1.5em;
+    padding-right: 1em;
+}
+
+h4 {
+    padding-left: 4em;
+
 }
