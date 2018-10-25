@@ -185,6 +185,7 @@ button[type=submit] {
 @media (max-width: 375px) {
     button[type=submit] {
         font-size: 1em;
+        margin-left: .5em;
     }
 }
 
