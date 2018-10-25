@@ -9,21 +9,26 @@ body {
 
 nav {
     background-color: white;
+    padding-bottom: 2em;
+}
+
+nav > img {
+    display: inline;
+    width: 10em;
+    margin-left: 3em;
+
 }
 
 
 nav li {
-    display: inline-flex;
+    display: inline;
 
 }
 
 li img:nth-child(1) {
-    display: inline-flex;
-    position: absolute;
-    margin-left: 5em;
-    margin-top: -1.99em;
-    width: 4%;
-    height: 5%;
+    display: inline;
+    width: 1.5em;
+    height: 10%;
 }
 
 li img:nth-child(1):hover {
@@ -34,6 +39,7 @@ li img:nth-child(1):hover {
 
 li a {
     color: grey;
+    display: inline;
     text-decoration: none;
     padding: 2em;
     font-size: 1.2em;
@@ -42,51 +48,13 @@ li a {
 }
 
 
-img:first-child {
-    float: top;
-    width: 100px;
-    height: 100px;
-    padding-left: 70px;
-}
-
 li a:hover {
     color: #1F4C9C;
 }
 
-/*
-form {
-    display: flex;
-    flex-flow: wrap;
-    font-size: 1.2em;
-    font-family: "Segoe UI", "Lucida Grande", "Helvetica Neue", Arial, sans-serif;
-    display: flex;
-    margin-left: 1.5em;
-    margin-right: 1.5em;
-    z-index: 10;
-}
-
-fieldset {
-    display: inline-flex;
-    border: none;
-    padding: 2em;
-    background-color: white;
-    margin-right: auto;
-}
-
-
-legend {
-    padding-top: 3em;
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-label {
-    width: 100%;
-}
-*/
 
 form {
-    max-width: 28em;
+    max-width: 20em;
     margin: 2em auto;
     padding: 2em;
     background-color: white;
@@ -101,6 +69,9 @@ fieldset {
 legend {
     display: block;
     margin-bottom: .3em;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: "DFDS-Bold", "Segoe UI", "Lucida Grande", "Helvetica Neue", Arial, sans-serif;
 }
 
 label {
@@ -119,6 +90,7 @@ output {
 
 input[type=checkbox] {
     margin: 0 4px 8px 0;
+    display: inline;
 }
 
 input[type=text] {
