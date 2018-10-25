@@ -113,8 +113,7 @@ button[type=submit] {
 }
 
 
-
-button[type=button] {
+[type=button] {
     font-weight: 550;
     background-color: #E78B3B;
     padding: .6em;
@@ -422,7 +421,7 @@ article {
 
 
 
-@media (max-width: 28) {
+@media (max-width: 28em) {
     article {
         min-width: 20em;
         padding: .1em;
@@ -611,7 +610,7 @@ h4 {
 
 
 
-footer {
+.main {
     background-color: #005184;
     bottom: 0;
     width: 100%;
@@ -621,7 +620,7 @@ footer {
     padding-bottom: 2em;
 }
 
-footer ul {
+.main ul {
     margin-top: 10px;
     margin-bottom: 0;
     padding: 0;
@@ -630,7 +629,7 @@ footer ul {
     margin-left: 2em;
 }
 
-footer li {
+.main li {
     list-style: none;
     font-size: 1em;
     color: #fff;

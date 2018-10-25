@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <script type="text/javascript" src="microinteractie.js"></script>
+    <script src="microinteractie.js"></script>
     <link rel="stylesheet" href="stylesheet.css" type="text/css">
     <link href="https://file.myfontastic.com/AjMyLcd45jJ5PCLVyWzxWZ/icons.css" rel="stylesheet">
     <meta charset="UTF-8">
@@ -16,11 +16,11 @@
     <header>
         <nav>
 
-            <img class="logoheader" src="images/nieuwe%20DFDS%20logo%20kopie.png" alt="Link naar homepage">
+            <img class="logoheader" src="images/nieuwe%20DFDS%20logo%20kopie.png" alt="Het logo van DFDS 2018">
             <ul>
                 <li> <a href="Inlog.html"> Inloggen </a></li>
                 <li><a href="index.html"> Favorieten
-                <img src="/images/iconEen1.svg" alt="icoon" id="icoon1">
+                <img src="/images/iconEen1.svg" alt="Zelf gemaakt icoon voor meldingen" id="icoon1">
 
 
                 </a></li>
@@ -36,25 +36,30 @@
                 <legend>
                     Filteren
                 </legend>
-                <legend>Leesduur</legend>
 
                 <label>Minuten</label>
                 <input type="range" min="1" max="100" value="50" class="slider"> <output>0   2   4  6   8   10</output>
 
 
-                <label for="sorteren1">  <input type="checkbox" name="sorteren1" value="Droevige verhalen">
+                <label for="sorteren1">
+
+                <input type="checkbox" name="sorteren1" value="Droevige verhalen" id="sorteren1">
             Droevige verhalen  &#40;33&#41;</label>
 
-                <label for="sorteren2"><input type="checkbox" name="sorteren2" value="Duisteren verhalen">
+
+                <label for="sorteren2">
+
+                <input id="sorteren2" type="checkbox" name="sorteren2" value="Duisteren verhalen">
+
               Duisteren verhalen  &#40;14&#41;</label>
 
-                <label for="sorteren3"><input type="checkbox" name="sorteren3" value="Droge verhalen"> Droge verhalen  &#40;23&#41;</label>
+                <label for="sorteren3"><input id="sorteren3" type="checkbox" name="sorteren3" value="Droge verhalen"> Droge verhalen  &#40;23&#41;</label>
 
 
-                <label for="sorteren4"><input type="checkbox" name="sorteren4" value="Grappige verhalen">
+                <label for="sorteren4"><input type="checkbox" id="sorteren4" name="sorteren4" value="Grappige verhalen">
                Grappige verhalen  &#40;13&#41;</label>
 
-                <label for="sorteren5"><input type="checkbox" name="sorteren5" value="Vrolijke verhalen">Vrolijke verhalen  &#40;9&#41;
+                <label for="sorteren5"><input type="checkbox" name="sorteren5" value="Vrolijke verhalen" id="sorteren5">Vrolijke verhalen  &#40;9&#41;
                </label>
 
                 <button type="submit">Toon resultaten</button>
@@ -63,7 +68,7 @@
 
 
         <input type="text" placeholder="Zoek een verhaal... ">
-        <button type="search">Zoek</button>
+        <button type="submit">Zoek</button>
 
         <h1> <span>Visueel </span> <span>opvallende</span> verhalen</h1>
         <button type="button"> Lees nu</button>
@@ -74,29 +79,29 @@
 
     <main>
 
-        <h2>Meest gelezen verhalen</h2>
-
-
-
+        <!-- meest gelezen verhalen section -->
         <section>
-            <article>
-
-                <head>
-                    <figure>
-                        <h3>#3 Droom<a href=" "></a></h3>
-
-                        <img class="verhaal" src="/images/verhalenvormgegeven/3.%20Droom.png" alt="">
-                    </figure>
-                </head>
+            <h2>Meest gelezen verhalen</h2>
 
 
-                <p>Slierten mist zwerven rond mijn benen. Net zat ik nog in Bus 21. Het was warm, zweet parelde langs mijn slapen.
-                    <!--
-                    <a href=" ">Lees verder</a>
-                    <input type="image" alt="bookmark" src="/images/bookmark2.svg">
--->
+            <!-- verhaal 1 van meest gelezen verhalen -->
 
-                    <a href="zoekresultaten.html">
+            <section>
+                <article>
+                    <header>
+                        <figure>
+
+                            <h3>#3 Droom<a href=" "></a></h3>
+
+                            <img class="verhaal" src="/images/verhalenvormgegeven/3.%20Droom.png" alt="Afbeelding van het verhaal droom">
+                        </figure>
+                    </header>
+
+
+                    <p>Slierten mist zwerven rond mijn benen. Net zat ik nog in Bus 21. Het was warm, zweet parelde langs mijn slapen.
+
+
+                        <a href="zoekresultaten.html">
                         <svg version="1.1" class="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 119.75 150.83" style="enable-background:new 0 0 119.75 150.83;" xml:space="preserve">
 <g>
 	<path d="M39.93,150.83c-5.59-3.71-7.17-9.03-7.13-15.54c0.17-29.31,0.08-58.63,0.08-87.95c0-2.1,0-4.2,0-6.89
@@ -114,23 +119,29 @@
 </svg>
 
                         </a>
-                </p>
-                <aside>
+                    </p>
+                </article>
+            </section>
+            <footer>
 
-                </aside>
+                <p> schrijver: M. Malovich</p>
 
-            </article>
+
+            </footer>
+
+
+
+
+
+            <!-- verhaal 2 -->
             <article>
-
-                <head>
+                <header>
                     <figure>
                         <h3>#59 Terugspoelen<a href=" "></a></h3>
 
-                        <img class="verhaal" src="/images/verhalenvormgegeven/Beroemd-0.1.jpg" alt="">
+                        <img class="verhaal" src="/images/verhalenvormgegeven/Beroemd-0.1.jpg" alt="Afbeelding van het verhaal beroemd">
                     </figure>
-                </head>
-
-
+                </header>
                 <p>De klok slaat twaalf uur in de middag als de beruchte blogger Max J. Molovich op het Stationsplein uit het gemeenteblik stapt.
                     <!--
                     <a href=" ">Lees verder</a>
@@ -154,23 +165,20 @@
 </g>
 </svg>
                     </a>
-
                 </p>
-                <aside>
-
-                </aside>
-
             </article>
+
+
+            <!-- verhaal 3 -->
             <article>
 
-                <head>
+                <header>
                     <figure>
                         <h3>#16 Eric Lucassen<a href=" "></a></h3>
 
-                        <img class="verhaal" src="/images/verhalenvormgegeven/eric-lucassen-16-01.png" alt="">
+                        <img class="verhaal" src="/images/verhalenvormgegeven/eric-lucassen-16-01.png" alt="Afbeelding van het verhaal Eric Lucassen">
                     </figure>
-                </head>
-
+                </header>
 
                 <p>Ik stap bus 21 uit terwijl ik mijn zoon op nog geen halve meter hinderlijk achtervolg.
                     <!--
@@ -195,23 +203,21 @@
 </svg>
                     </a>
                 </p>
-                <aside>
-
-                </aside>
-
             </article>
 
-            <article>
 
-                <head>
+
+            <!-- verhaal 4 laatste meest gelezen verhalen -->
+            <article>
+                <header>
                     <figure>
                         <a href="zoekresultaten.html">
                             <h3>#3 Droom</h3>
                         </a>
 
-                        <img class="verhaal" src="/images/verhalenvormgegeven/Stijloefeningen(21)-Sonnet.jpg" alt="">
+                        <img class="verhaal" src="/images/verhalenvormgegeven/Stijloefeningen(21)-Sonnet.jpg" alt="afbeelding van een droom">
                     </figure>
-                </head>
+                </header>
 
 
                 <p>Slierten mist zwerven rond mijn benen. Net zat ik nog in Bus 21. Het was warm, zweet parelde langs mijn slapen.
@@ -238,9 +244,7 @@
 </svg>
                     </a>
                 </p>
-                <aside>
 
-                </aside>
 
             </article>
 
@@ -250,32 +254,34 @@
 
 
 
-
-
-        <head>
-            <h4>Aanbevolen Verhalen<a href=" "></a></h4>
-            <img src="" alt="">
-        </head>
-
+        <!-- Aanbevolen verhalen section -->
         <section>
+
+            <header>
+                <h2>Aanbevolen Verhalen<a href=" "></a></h2>
+
+            </header>
 
             <article>
 
-                <head>
-                    <figure>
-                        <h3>#12 Stoned<a href=" "></a></h3>
+                <section>
+                    <!-- verhaal 1 aanbevolen verhalen -->
 
-                        <img class="verhaal" src="/images/verhalenvormgegeven/versie1-grouped-01.jpg" alt="">
-                    </figure>
-                </head>
+                    <header>
+                        <figure>
+                            <h3>#12 Stoned<a href=" "></a></h3>
+
+                            <img class="verhaal" src="/images/verhalenvormgegeven/versie1-grouped-01.jpg" alt="Afbeelding van het verhaal stoned">
+                        </figure>
+                    </header>
 
 
-                <p>Zodra ik de bus uitstap steek ik een dikke vette joint op. De derde van de dag al.
-                    <!--
+                    <p>Zodra ik de bus uitstap steek ik een dikke vette joint op. De derde van de dag al.
+                        <!--
                     <a href=" ">Lees verder</a>
                     <input type="image" alt="bookmark" src="/images/bookmark2.svg">
 -->
-                    <a href="zoekresultaten.html">
+                        <a href="zoekresultaten.html">
                     <svg version="1.1" class="laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 119.75 150.83" style="enable-background:new 0 0 119.75 150.83;" xml:space="preserve">
 <g>
@@ -293,25 +299,22 @@
 </g>
 </svg>
                     </a>
-                </p>
-                <aside>
-
-                </aside>
-
+                    </p>
+                </section>
             </article>
 
 
             <article>
 
-                <head>
+                <header>
                     <figure>
                         <a href="zoekresultaten.html">
                             <h3>#69 Hardboiled</h3>
                         </a>
 
-                        <img class="verhaal" src="/images/verhalenvormgegeven/Tekengebied%206@3x.png" alt="">
+                        <img class="verhaal" src="/images/verhalenvormgegeven/Tekengebied%206@3x.png" alt="Afbeelding verhaal Hardboiled">
                     </figure>
-                </head>
+                </header>
 
 
                 <p>Het is snikheet in die godverdomde bus. Stinkend zweet vermengd met de geur van klamme jassen.
@@ -346,15 +349,15 @@
 
             <article>
 
-                <head>
+                <header>
                     <figure>
                         <a href="zoekresultaten.html">
                             <h3>13 Heroïsch Vers</h3>
                         </a>
 
-                        <img class="verhaal" src="/images/verhalenvormgegeven/Hero%C3%AFsch%20vers-15.png" alt="">
+                        <img class="verhaal" src="/images/verhalenvormgegeven/Hero%C3%AFsch%20vers-15.png" alt="Afbeelding van het verhaal Heroïsch Vers">
                     </figure>
-                </head>
+                </header>
 
 
                 <p>De bus stopt voor Centraal, z’n zoon slaapt in z’n armen De regen plenst hem nat, de wind jankt langs zijn oor.
@@ -386,23 +389,27 @@
                 </aside>
 
             </article>
+
+
+
             <article>
+                <section>
+                    <!-- verhaal 2 van aanbevolen verhalen verhalen -->
+                    <header>
+                        <figure>
+                            <h3>#6 Beroemd<a href=" "></a></h3>
 
-                <head>
-                    <figure>
-                        <h3>#6 Beroemd<a href=" "></a></h3>
-
-                        <img class="verhaal" src="/images/verhalenvormgegeven/stoned.png" alt="">
-                    </figure>
-                </head>
+                            <img class="verhaal" src="/images/verhalenvormgegeven/stoned.png" alt="Afbeelding van het verhaal Stoned">
+                        </figure>
+                    </header>
 
 
-                <p>Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten. Hij zwaait joviaal terug.
-                    <!--
+                    <p>Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten. Hij zwaait joviaal terug.
+                        <!--
                     <a href=" ">Lees verder</a>
                     <input type="image" alt="bookmark" src="/images/bookmark2.svg">
 -->
-                    <a href="zoekresultaten.html">
+                        <a href="zoekresultaten.html">
                     <svg version="1.1" class="laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 119.75 150.83" style="enable-background:new 0 0 119.75 150.83;" xml:space="preserve">
 <g>
@@ -420,18 +427,16 @@
 </g>
 </svg>
                     </a>
-                </p>
-                <aside>
+                    </p>
 
-                </aside>
+                </section>
 
             </article>
 
 
+
+
         </section>
-
-
-
 
     </main>
 
@@ -439,7 +444,7 @@
 
 
 
-    <footer>
+    <footer class="main">
         <ul>
 
             <li>© DFDS 2018</li>
