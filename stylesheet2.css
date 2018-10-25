@@ -72,7 +72,7 @@ a:hover {
     }
 }
 
-@media only screen and (max-width: 28em) {
+@media only screen and (max-width: 375pxem) {
     form {
         margin: 1em;
         display: flex;
