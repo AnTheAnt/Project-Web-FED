@@ -53,6 +53,7 @@ li a:hover {
     color: #1F4C9C;
 }
 
+/*
 form {
     display: flex;
     flex-flow: wrap;
@@ -82,6 +83,30 @@ legend {
 label {
     width: 100%;
 }
+*/
+
+form {
+    max-width: 28em;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: white;
+    font-family: "Segoe UI", "Lucida Grande", "Helvetica Neue", Arial, sans-serif;
+}
+
+fieldset {
+    margin-bottom: 2em;
+    border: none;
+}
+
+legend {
+    display: block;
+    margin-bottom: .3em;
+}
+
+label {
+    display: inline;
+    font-size: 1.2em;
+}
 
 
 [type=range] {
@@ -91,6 +116,39 @@ label {
 output {
     word-spacing: 30px;
 }
+
+input[type=checkbox] {
+    margin: 0 4px 8px 0;
+}
+
+input[type=text] {
+    font-size: 1.2em;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: .2em;
+    background-color: grey;
+    box-shadow: 0;
+    margin-bottom: .1em;
+    width: 100%;
+    padding: .35em .5em;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background: #fcfcfc;
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, .05);
+}
+
+input[type=text]:focus {
+    box-shadow: 0 0 5px blue rgba (81, 203, 238, 1);
+    border: 1px solid blue rgba (81, 203, 238, 1);
+}
+
+@media screen and (min-width: 550px) {
+    form {
+        max-width: 375px;
+    }
+}
+
 
 
 
@@ -113,12 +171,6 @@ button[type=submit] {
     }
 }
 
-
-[type=button] {
-    font-weight: 550;
-    background-color: #E78B3B;
-    padding: .6em;
-}
 
 
 button:hover,
@@ -147,27 +199,7 @@ button::after {
 
 }
 
-button[type=search] {
-    color: white;
-    display: inline-flex;
-    height: 2em;
-    font-family: "Segoe UI", "Lucida Grande", "Helvetica Neue", Arial, sans-serif;
-    font-size: 1em;
-    font-weight: 550;
-    text-align: center;
-    background-color: #E78B3B;
-}
 
-@media (max-width: 25em) {
-    button[type=search] {
-        display: inline;
-        width: 6em;
-        font-size: 1em;
-
-    }
-}
-
-form:nth-child(2) {}
 
 [type=text] {
     display: inline-flex;
@@ -181,32 +213,6 @@ form:nth-child(2) {}
 }
 
 
-
-@media (max-width: 44em) {
-    [type=text] {
-        width: 35em;
-        height: 2em;
-        margin-left: 2em;
-    }
-}
-
-@media (max-width: 40em) {
-    [type=text] {
-        width: 30em;
-        height: 2em;
-        margin-top: 2em;
-        margin-left: 2.4em;
-    }
-}
-
-@media (max-width: 25em) {
-    [type=text] {
-        width: 17em;
-        height: 1.5em;
-        margin-top: 2em;
-        margin-left: 2.4em;
-    }
-}
 
 
 /* clipping path not supported in safari or firefox. */
@@ -344,24 +350,19 @@ h1 {
     padding-right: 2em;
 }
 
-h1 span {
+h1,
+span {
     display: block;
 }
 
-button[type=button] {
-    margin-left: auto;
-    flex-direction: column;
-    color: white;
-    display: flex;
-
-}
 
 
-h1 span::before {
+h1 > span::before {
     content: attr(data-text);
     background: #E78B3B;
     padding: 1px 8px;
     opacity: .1;
+    z-index: 20;
 }
 
 
