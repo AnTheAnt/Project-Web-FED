@@ -1,5 +1,5 @@
 body {
-    width: 100%;
+
     font-family: "Segoe UI", "Lucida Grande", "Helvetica Neue", Arial, sans-serif;
     background-color: #EAEDEE;
     margin: auto;
@@ -65,11 +65,7 @@ a:hover {
 }
 
 @media only screen and (max-width: 375pxem) {
-    form {
-        margin: 1em;
-        flex-flow: wrap;
-        margin: 1em;
-    }
+    form {}
 
 }
 
@@ -77,6 +73,10 @@ a:hover {
 @media only screen and (max-width: 375px) {
     input {
         background-color: red;
+        width: calc(80% - 3em);
+        width: 100%;
+        height: 1.4em;
+
 
     }
 }
@@ -84,15 +84,14 @@ a:hover {
 @media only screen and (max-width: 375px) {
     label {
         color: aqua;
-        width: 80%;
-        width: calc(100% - 3rem);
+        width: 100%;
+        width: calc(80% - 3rem);
     }
 }
 
 ;
 }
 
-}
 
 
 
