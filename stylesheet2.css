@@ -86,7 +86,7 @@ a:hover {
         background-color: green;
         width: calc(80% - 3em);
         width: 100%;
-        height: 1.4em;
+        height: 1.2em;
 
 
     }
@@ -97,10 +97,8 @@ a:hover {
         color: black;
         width: 100%;
         width: calc(80% - 3rem);
+        font-size: .9em;
     }
-}
-
-;
 }
 
 
