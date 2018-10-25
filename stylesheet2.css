@@ -77,16 +77,25 @@ a:hover {
         margin: 1em;
         display: flex;
         flex-flow: wrap;
+        position: absolute;
 
     }
 
 }
 
 
-@media only screen and (max-width: 28em) {
+@media only screen and (max-width: 375px) {
     input {
+        display: inline-flex;
         height: .8em;
         width: 20em;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    label {
+        display: block;
+        position: relative;
     }
 }
 
