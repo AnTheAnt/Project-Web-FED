@@ -61,9 +61,7 @@ a:hover {
 
 
 @media only screen and (max-width: 768px) {
-    input {
-        height: 1em;
-    }
+    input {}
 }
 
 @media only screen and (max-width: 375pxem) {
@@ -80,10 +78,7 @@ a:hover {
 
 
 @media only screen and (max-width: 375px) {
-    input {
-        height: .8em;
-        width: 20em;
-    }
+    input {}
 }
 
 @media only screen and (max-width: 375px) {
@@ -95,8 +90,8 @@ a:hover {
 form {
     font-size: 1.2em;
     font-family: "Segoe UI", "Lucida Grande", "Helvetica Neue", Arial, sans-serif;
-    display: inline-flex;
-    flex-flow: column-reverse;
+    display: flex;
+    flex-flow: wrap;
     margin-left: 1.5em;
     margin-right: 1.5em;
     z-index: 10;
