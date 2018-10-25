@@ -69,18 +69,29 @@ a:hover {
         margin: 1em;
         flex-flow: wrap;
         margin: 1em;
-
     }
 
 }
 
 
 @media only screen and (max-width: 375px) {
-    input {}
+    input {
+        background-color: red;
+
+    }
 }
 
 @media only screen and (max-width: 375px) {
-    label {}
+    label {
+        color: aqua;
+        width: 80%;
+        width: calc(100% - 3rem);
+    }
+}
+
+;
+}
+
 }
 
 
