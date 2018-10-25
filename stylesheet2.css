@@ -6,6 +6,9 @@ body {
     margin-top: 1em;
 }
 
+main {
+    margin: 1rem auto;
+}
 
 nav {
     background-color: white;
@@ -101,12 +104,10 @@ a:hover {
 form {
     font-size: 1.2em;
     font-family: "Segoe UI", "Lucida Grande", "Helvetica Neue", Arial, sans-serif;
-    display: flex;
-    flex-flow: wrap;
+    flex-direction: column;
     margin-left: 1.5em;
     margin-right: 1.5em;
-    z-index: 10;
-    overflow: hidden;
+    padding: 0.5rem 0;
 }
 
 fieldset {
@@ -126,6 +127,10 @@ legend {
     font-weight: bold;
     font-family: "Segoe UI", "Lucida Grande", "Helvetica Neue", Arial, sans-serif;
 
+}
+
+label {
+    display: block;
 }
 
 input {
