@@ -1,3 +1,12 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+}
+
+
 @font-face {
     font-family: 'Hardboiled';
     src: url('fonts/Hardboiled.eot?qu8wf7');
@@ -120,19 +129,26 @@
     z-index: 2;
 }
 
+span {
+    background-color: white;
+}
+
+section {
+    opacity: .99;
+}
 
 
-body {
-    width: 100%;
+
+main {
     font-family: "Segoe UI", "Lucida Grande", "Helvetica Neue", Arial, sans-serif;
     background-color: white;
     margin: auto;
-    margin-top: 1em;
+    max-width: 375px;
     padding: auto;
     background: url(/images/gifhaar.gif);
     background-repeat: no-repeat;
     background-size: auto 80%;
-    background-position: left;
+    background-position: center;
     z-index: -10;
     background-attachment: fixed;
 }
@@ -161,42 +177,72 @@ li img:nth-child(1) {
     width: 4%;
 }
 
+li a {
+    color: grey;
+    display: inline;
+    text-decoration: none;
+    padding: 1em;
+    font-size: 1.2em;
+    list-style: none;
+
+}
+
+
+li a:hover {
+    color: #1F4C9C;
+}
 
 p {
-    max-width: 400px;
+    max-width: 375px;
     background-color: white;
     z-index: -10;
     opacity: .9;
+    margin-left: 4em;
 }
 
-p:hover {
-    background-image: url(images/barst.png);
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: center;
-    z-index: 20;
-    background-color: black;
-
-}
 
 p:nth-of-type(1) {
     margin-top: 18em;
     margin-left: 6em;
 }
 
-p:nth-child(2) {}
-
-
 
 section {
-    margin-left: 1em;
-    margin-right: 1em;
-    opacity: .9;
+    margin: auto;
+    max-width: 375px;
+}
+
+section footer {
+    width: 100%;
+    z-index: 10;
+    overflow: hidden;
+
+}
+
+section footer p {
+    display: block;
+    padding: .1em;
+    margin-right: 5em;
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 8em;
+}
+
+section footer a {
+    display: block;
+    text-decoration: none;
+    color: #204F80;
+    font-size: 1.4em;
+    padding: .1em;
+    background-color: white;
+    text-align: center;
+
+
 }
 
 
 
-footer {
+body footer:nth-child(3) {
     background-color: #005184;
     bottom: 0;
     width: 100%;
@@ -206,7 +252,7 @@ footer {
     padding-bottom: 2em;
 }
 
-footer ul {
+body footer ul:nth-child(3) {
     margin-top: 10px;
     margin-bottom: 0;
     padding: 0;
@@ -215,7 +261,7 @@ footer ul {
     margin-left: 2em;
 }
 
-footer li {
+body footer:nth-child(3) li {
     list-style: none;
     font-size: 1em;
     color: #fff;

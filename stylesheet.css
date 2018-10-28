@@ -565,13 +565,6 @@ figure:hover {
     overflow: hidden;
 }
 
-section article span:nth-child(1):before {
-    content: "\2705";
-    display: inline;
-    position: absolute;
-    margin-left: 15em;
-
-}
 
 #loadingProgressG_1 {
     background-color: rgba(99, 202, 64, 1);
@@ -618,9 +611,6 @@ svg {
     z-index: 20;
 }
 
-svg.active {
-    fill: white;
-}
 
 @media (max-width: 24em) {
     svg {
@@ -631,20 +621,25 @@ svg.active {
     }
 }
 
-svg:hover {
-    fill: orange;
-    transform: translate(0, -10px)
+
+@media (max-width: 204em) {
+    svg {
+        margin-left: 11em;
+        height: 5%;
+    }
 }
 
 svg.active {
     transform: translate(0, -360px);
     transform: translate(55px, -380px);
+    fill: white;
 }
 
 .download {
-    margin-left: 9em;
+    margin-left: 8em;
     margin-top: 1em;
     position: absolute;
+    display: block;
 }
 
 @media and screen (min-width 385px) {
@@ -654,11 +649,6 @@ svg.active {
     }
 }
 
-
-svg:hover {
-    fill: orange;
-    transform: translate(0, -10px)
-}
 
 svg:hover {
     fill: orange;
