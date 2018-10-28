@@ -256,9 +256,9 @@ button::after {
         right: 0;
         position: absolute;
         padding-top: 8.2em;
-        -webkit-clip-path: inset(67% 0% 12.8% 0%);
-        clip-path: inset(67% 0% 12.8% 0%);
-        background-color: aqua;
+        -webkit-clip-path: inset(69% 0% 16% 0%);
+        clip-path: inset(69% 0% 16% 0%);
+        background-color: #E78B3B;
 
     }
 }
@@ -359,9 +359,10 @@ span {
 h1 > span::before {
     content: attr(data-text);
     background: #E78B3B;
-    padding: 1px 8px;
-    opacity: .1;
+    opacity: .10;
+    display: block;
     z-index: 20;
+
 }
 
 
@@ -487,9 +488,9 @@ figure::after {
     right: 0;
     height: 100%;
     top: 0;
-    width: 220%;
-    -webkit-clip-path: polygon (75% 0%, 100% 0%, 100% 100%, 9% 100%);
-    clip-path: polygon(85% 0%, 100% 0%, 100% 100%, 65% 100%);
+    width: 100%;
+    -webkit-clip-path: polygon (65% 0%, 100% 0%, 100% 100%, 309% 100%);
+    clip-path: polygon(65% 0%, 100% 0%, 100% 100%, 30% 100%);
     opacity: 0.7;
     background: #36214B;
     z-index: 0;
@@ -509,11 +510,10 @@ figure::after {
 @media (max-width: 23em) {
     figure::after {
         content: "";
-        padding-top: 8.2em;
-        -webkit-clip-path: inset(65% 0% 14.1% 0%);
-        clip-path: inset(39% 0% 32% 0%);
-        background-color: rebeccapurple;
-        width: inherit;
+        -webkit-clip-path: inset(53% 0% 2% 0%);
+        clip-path: inset(53% 0% 2% 0%);
+        background-color: #36214B;
+        width: 100%;
 
     }
 }
@@ -698,7 +698,17 @@ footer p {
 
 }
 
+body main footer a {
+    display: block;
+    text-decoration: none;
+    color: #204F80;
+    font-size: 1.4em;
+    padding: .1em;
+    background-color: white;
+    text-align: center;
 
+
+}
 
 
 section footer:nth-child(1) {
