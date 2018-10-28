@@ -1,0 +1,61 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  background-color: #fff;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.haarname {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.haar1 {
+  width: 0.5771484375em;
+}
+
+.haar7 {
+  width: 0.5771484375em;
+}
+
+.haar2 {
+  width: 0.5771484375em;
+}
+
+.haar8 {
+  width: 0.5771484375em;
+}
+
+.haar3 {
+  width: 0.5771484375em;
+}
+
+.haar9 {
+  width: 0.5771484375em;
+}
+
+.haar4 {
+  width: 0.5771484375em;
+}
+
+.haar10 {
+  width: 0.5771484375em;
+}
+
+.haar5 {
+  width: 0.5771484375em;
+}
+
+.haar11 {
+  width: 0.5771484375em;
+}
+
+.haar6 {
+  width: 0.5771484375em;
+}

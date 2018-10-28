@@ -1,0 +1,62 @@
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(sprite.svg);
+  background-color: #fff;
+}
+.haar1 {
+  width: 18px;
+  height: 32px;
+  background-position: 0 0;
+}
+.haar7 {
+  width: 18px;
+  height: 32px;
+  background-position: -48px 0;
+}
+.haar2 {
+  width: 18px;
+  height: 32px;
+  background-position: -96px 0;
+}
+.haar8 {
+  width: 18px;
+  height: 32px;
+  background-position: -144px 0;
+}
+.haar3 {
+  width: 18px;
+  height: 32px;
+  background-position: -192px 0;
+}
+.haar9 {
+  width: 18px;
+  height: 32px;
+  background-position: -240px 0;
+}
+.haar4 {
+  width: 18px;
+  height: 32px;
+  background-position: -288px 0;
+}
+.haar10 {
+  width: 18px;
+  height: 32px;
+  background-position: -336px 0;
+}
+.haar5 {
+  width: 18px;
+  height: 32px;
+  background-position: -384px 0;
+}
+.haar11 {
+  width: 18px;
+  height: 32px;
+  background-position: -432px 0;
+}
+.haar6 {
+  width: 18px;
+  height: 32px;
+  background-position: -480px 0;
+}
+
