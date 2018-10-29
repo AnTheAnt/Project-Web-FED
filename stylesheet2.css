@@ -93,6 +93,31 @@ input[type=password] {
     box-shadow: inset 1px 1px 5px rgba(0, 0, 0, .05);
 }
 
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+
+    &:valid background: url(images/Gif%20succes.gif);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 20px 20px;
+}
+
+& + label {
+    opacity: 0;
+}
+
+}
+
+}
+
+
+
+
+
+
+
 input[type=text]:hover {
     box-shadow: 0 0 5px rgba (81, 203, 238, 1);
     border: 1px solid rgba (81, 203, 238, 1);

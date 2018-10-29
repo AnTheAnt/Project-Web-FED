@@ -18,7 +18,7 @@ for (var i = 0; i < downloadKnoppen.length; i++) {
 }
 
 function downloadPress(event) {
-    loader = document.getElementById('loadingProgressG')
+    loader = document.querySelectorAll('.loadingProgressG')
     loader.classList.add('active')
 }
 

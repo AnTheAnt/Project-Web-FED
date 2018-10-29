@@ -12,6 +12,8 @@ body {
 }
 
 
+/* sectie hieronder is allemaal voor de navigatie van index.html*/
+
 nav {
     background-color: white;
     padding-bottom: 2em;
@@ -35,6 +37,7 @@ li img:nth-child(1) {
     width: 4%;
 }
 
+/*aan dit icoon wordt via JS een class toegevoegd zodat deze dan weer zichtbaar is, zie .icoon.active*/
 
 .icoon {
     display: none;
@@ -62,8 +65,11 @@ li a:hover {
     color: #1F4C9C;
 }
 
+/*het formulier wordt in het midden van de pagina gecentreerd*/
 
 form {
+
+    display: flex;
     max-width: 20em;
     margin: 2em auto;
     padding: 2em;
@@ -79,7 +85,7 @@ form:nth-child(1) {
 
 form:nth-child(2) {
     padding-bottom: .9em;
-    display: flex;
+    justify-content: flex-start;
 }
 
 [type=submit]:nth-child(2) {
@@ -112,7 +118,7 @@ label {
 }
 
 output {
-    word-spacing: 30px;
+    word-spacing: 2.62em;
 }
 
 input[type=checkbox] {
@@ -137,19 +143,15 @@ input[type=text] {
     box-shadow: inset 1px 1px 5px rgba(0, 0, 0, .05);
 }
 
-input[type=text]:focus {
-    box-shadow: 0 0 5px blue rgba (81, 203, 238, 1);
-    border: 1px solid blue rgba (81, 203, 238, 1);
-}
-
+/*
 @media screen and (min-width: 550px) {
     form {
-        max-width: 375px;
+        max-width: 345px;
     }
 }
+*/
 
-
-
+/*buttons voor toon resultaten en de zoek button naast het zoekveld, laatste formulier*/
 
 button[type=submit] {
     margin-top: 1em;
@@ -163,14 +165,15 @@ button[type=submit] {
     display: block;
 }
 
+/*
+
 @media (max-width: 24em) {
     button[type=submit] {
         font-size: .7em;
 
     }
 }
-
-
+*/
 
 button:hover,
 button:focus {
@@ -186,8 +189,10 @@ button:focus {
 }
 
 button:active {
-    transform: scale(0.98);
+    transform: scale(0.95);
 }
+
+/*het pijltje in de button net als DFDS*/
 
 button::after {
     content: "";
@@ -195,7 +200,6 @@ button::after {
     vertical-align: middle;
     display: inline;
     margin-left: 1.2em;
-
 }
 
 
@@ -242,11 +246,13 @@ button::after {
         top: 0;
         bottom: 0;
         padding-top: 9em;
-        -webkit-clip-path: inset(61% 0% 17.8% 0%);
-        clip-path: inset(68% 0% 14.8% 0%);
+        -webkit-clip-path: inset(65% 0% 12.6% 0%);
+        clip-path: inset(65% 0% 12.6% 0%);
 
     }
 }
+
+/*breakpoint waarin de banner geen polygon meer is maar een blok*/
 
 @media (max-width: 36em) {
     .banner::after {
@@ -256,8 +262,8 @@ button::after {
         right: 0;
         position: absolute;
         padding-top: 8.2em;
-        -webkit-clip-path: inset(69% 0% 16% 0%);
-        clip-path: inset(69% 0% 16% 0%);
+        -webkit-clip-path: inset(67% 0% 11.7% 0%);
+        clip-path: inset(67% 0% 11.7% 0%);
         background-color: #E78B3B;
 
     }
@@ -278,6 +284,7 @@ button::after {
     }
 }
 
+/*de afbeelding voor in de banner*/
 
 .banner {
     background-image: url(images/beach-beach-chair-daylight-556961%20kopie.jpg);
@@ -289,6 +296,8 @@ button::after {
     border-left: 4em solid #EAECEE;
 
 }
+
+/*zorgt er voor dat de border om de banner heen mee schaalt en de formulieren meer ruimte hebben op een kleiner scherm. */
 
 @media (max-width: 29em) {
     .banner {
@@ -313,6 +322,8 @@ button::after {
 
 }
 
+/*border voor de main*/
+
 main {
     border-right: 4em solid #EAECEE;
     border-left: 4em solid #EAECEE;
@@ -330,23 +341,23 @@ main {
     main {
         border-right: 1em solid #EAECEE;
         border-left: 1em solid #EAECEE;
-        ;
-
     }
 }
 
 
 
+/*de h1 heeft speciale styling omdat deze alleen voorkomt in de banner*/
 
 h1 {
-    font-size: 2.4em;
+    font-size: 3.2em;
     font-family: DFDS-Bold, sans-serif;
-    font-weight: 700;
+    font-weight: bolder;
     text-align: right;
     line-height: 1.01;
     color: white;
     text-transform: uppercase;
-    padding-right: 2em;
+    padding-right: 1.2em;
+    padding-bottom: 1em;
 }
 
 h1,
@@ -355,8 +366,9 @@ span {
 }
 
 
+/*zorgt er voor dat de tekst onder elkaar blijft staan door attr data-text*/
 
-h1 > span::before {
+header h1 span::before {
     content: attr(data-text);
     background: #E78B3B;
     opacity: .10;
@@ -365,19 +377,21 @@ h1 > span::before {
 
 }
 
+/*breakpoint die er voor zorgt dat de tekst in het midden staat en de font size aan past*/
 
 @media (max-width: 75em) {
     h1 {
         text-align: center;
+        font-size: 3em;
         margin: auto;
         font-family: DFDS-Bold, sans-serif;
-        padding-top: 2em;
-        font-weight: 700;
+        padding-top: 5em;
+        font-weight: bolder;
         line-height: 1em;
     }
 }
 
-@media (max-width: 28em) {
+@media (max-width: 23em) {
     h1 {
         margin: 1em;
         margin-right: 1em;
@@ -387,11 +401,7 @@ h1 > span::before {
     }
 }
 
-@media (max-width: 22em) {
-    h1 span {
-        text-align: left;
-    }
-}
+/* de h2 komt alleen voor als aankondiging van de verhalen*/
 
 h2 {
     font-size: 2em;
@@ -405,37 +415,32 @@ h2 {
 
 
 
+/*hier staan de verhalen in */
 
 section {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: wrap;
     justify-content: space-around;
-    margin: auto;
 
 }
 
-/*
-@media (max-width: 95.9375em) {
-    article {}
-}
-*/
+/*de verhalen zelf*/
 
 article {
-    display: block;
-    min-width: 19.8em;
-    max-width: 18em;
+    min-width: 20em;
+    max-width: 20em;
     padding: 2em;
-    margin: auto;
+
 }
 
 
 
 
-@media (max-width: 28em) {
+@media (max-width: 23em) {
     article {
         min-width: 20em;
-        padding: .1em;
-        margin: .1em;
+        padding: .2em;
+        margin: auto;
     }
 }
 
@@ -443,38 +448,33 @@ article {
 p {
     font-size: 1.1em;
     background-color: white;
-    padding: 1.1em;
-    padding-bottom: 3em;
+    padding: .5em;
+    padding-bottom: 4.5em;
+    max-height: 4em;
 }
 
+/*de afbeelding van de verhalen*/
 
 img:nth-child(2) {
     width: 100%;
     height: 100%;
     z-index: -10;
-    position: absolute;
-    margin-top: -15.5em;
+    bottom: 15.5em;
     background-color: white;
 }
 
-
+/*de polygon voor over de verhalen heen*/
 
 figure {
-    height: 18em;
+    height: 16em;
     margin: auto;
     position: relative;
-    margin-bottom: -1em;
-    width: 21em;
+    top: 1.2em;
+    width: 20.3em;
     z-index: 20;
 
 }
 
-@media (max-width 35em) {
-    figure {
-        width: 70em;
-
-    }
-}
 
 figure * {
     z-index: 10;
@@ -502,16 +502,18 @@ figure::after {
         height: 17em;
         margin: auto;
         position: relative;
-        margin-bottom: -1em;
-        width: 17em;
+        bottom: 1em;
+        width: 18em;
     }
 }
+
+/* de polygon verandert in een blok als titel houder*/
 
 @media (max-width: 23em) {
     figure::after {
         content: "";
-        -webkit-clip-path: inset(63% 0% 2% 0%);
-        clip-path: inset(63% 0% 2% 0%);
+        -webkit-clip-path: inset(63% 0% 0% 0%);
+        clip-path: inset(64% 0% 0% 0%);
         background-color: #36214B;
         width: 100%;
         height: 100%;
@@ -521,7 +523,9 @@ figure::after {
 
 @media (max-width: 23em) {
     p {
-        width: auto;
+        width: 85%;
+        height: 100%;
+        margin-left: .9em;
 
     }
 }
@@ -534,17 +538,7 @@ figure:hover {
 }
 
 
-[type=image] {
-    margin-top: 1em;
-    padding: 10em;
-    display: block;
-    height: 10%;
-    width: 10%;
-    position: relative;
-    z-index: 0;
-}
-
-
+/* de download actie gekoppeld aan svg bestand uit html en werkend gemnaakt met js*/
 
 #loadingProgressG {
     display: none;
@@ -601,21 +595,23 @@ figure:hover {
     }
 }
 
+
+
+/*de styling van de svg zodat deze binnen de p blijven staan*/
+
 svg {
     display: block;
     position: absolute;
-    margin-left: 12em;
     margin-top: 1em;
-    height: 5%;
-    width: 5%;
-    transition: all 0.01s;
+    justify-content: flex-start;
+    transition: all 0.4s;
     z-index: 20;
 }
 
 
 @media (max-width: 24em) {
     svg {
-        margin-left: 13.8em;
+        margin-left: 12.8em;
         height: 7%;
         width: 7%;
 
@@ -625,47 +621,47 @@ svg {
 
 @media (max-width: 204em) {
     svg {
-        margin-left: 11em;
+        margin-left: 14em;
         height: 5%;
     }
 }
 
+
+/* wanneer de svg is geactiveer zal deze naar boven in op de afbeelding van het e=verhaal gaan staan. En verschijnt er boven naast favorieten een vinkje*/
+
 svg.active {
-    transform: translate(0, -360px);
-    transform: translate(55px, -380px);
-    fill: white;
+    transform: translate(20px, -360px);
+    transform: translate(20px, -360px);
+    fill: #E78B3B;
 }
 
 .download {
-    margin-left: 8em;
+    margin-left: 11em;
+    box-shadow: 2px solid grey;
+    opacity: .8;
+    padding: .1em;
     margin-top: 1em;
+    width: 4%;
     position: absolute;
     display: block;
 }
 
-@media and screen (min-width 385px) {
+
+@media and screen (max-width 204em) {
 
     .download {
-        margin-left: 2em;
+        margin-left: 12em;
     }
 }
 
 
 svg:hover {
-    fill: orange;
-    transform: translate(0, -10px)
+    transform: translate(0, -10px);
+    border: 1px solid #EAECEE;
+    box-shadow: 5px 2px #AFB5BD;
 }
 
-/*
-svg:hover {
-    transform: translate(0, -360px);
-    -webkit-transform: translate(0, -360px);
-    -o-transform: translate(0, -360px);
-    -moz-transform: translate(0, -360px);
-    transition: 2s cubic-bezier(.17, .67, .83, .67);
-    transition-delay: .1s;
-}
-*/
+
 
 h3 {
     text-align: right;
@@ -693,22 +689,27 @@ h4 {
 
 }
 
-footer p {
-    margin-top: -1em;
-    padding-bottom: 1em;
+/* de footer van de verhalen*/
 
+section article footer p {
+    margin: auto;
+    font-size: .9em;
+    margin-top: -1.3em;
+    padding-bottom: 1em;
+    padding-top: 2em;
+    text-align: center;
+    width: auto;
 }
+
+/*de footer van de DFDS pagina zelf*/
 
 body main footer a {
     display: block;
     text-decoration: none;
     color: #204F80;
-    font-size: 1.4em;
-    padding: .1em;
+    font-size: 1.3em;
     background-color: white;
     text-align: center;
-
-
 }
 
 
