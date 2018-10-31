@@ -14,14 +14,12 @@ Ga naar mijn GitHub pagina: https://github.com/AnTheAnt/Project-Web-FED
  Voor pulling&pushing is een password nodig. 
  
 
-## screenshots:
-
-
-
-
 
 ### Overview
 Excluding merges, 1 author has pushed 37 commits to master and 37 commits to all branches. On master, 83 files have changed and there have been 9,464 additions and 493 deletions.
+
+
+## screenshots:
 ![main](/images/screenshothome.png)
 *overzichtspagina van de 99verhalen website*
 
