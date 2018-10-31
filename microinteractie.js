@@ -8,7 +8,7 @@
 var vliegen = document.querySelectorAll('.vliegen');
 
 for (var i = 0; i < vliegen.length; i++) {
-    vliegen[i].addEventListener('click', test);
+    vliegen[i].addEventListener('click', opslaan);
 }
 
 var downloadKnoppen = document.querySelectorAll(".download");
@@ -18,11 +18,11 @@ for (var i = 0; i < downloadKnoppen.length; i++) {
 }
 
 function downloadPress(event) {
-    loader = document.querySelectorAll('.loadingProgressG')
+    loader = document.querySelector(".loadingProgressG");
     loader.classList.add('active')
 }
 
-function test(event) {
+function opslaan(event) {
     var icon = document.querySelector(".icoon");
     icon.classList.add('active')
     bookMark(event)

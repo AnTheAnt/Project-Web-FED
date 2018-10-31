@@ -29,6 +29,7 @@ body {
     text-transform: none;
     line-height: 1;
     display: inline-block;
+    vertical-align: top;
 
 
     /* Better Font Rendering =========== */
@@ -134,9 +135,10 @@ body {
     /* For mobile phones: */
     [class*="icon"] {
         font-size: .7em;
-        text-align: left;
+        text-align: center;
     }
 }
+
 
 
 
@@ -150,10 +152,9 @@ main {
     background-repeat: no-repeat;
     background-size: auto 90%;
     background-position: center;
-    z-index: -10;
+    z-index: -1;
     background-attachment: fixed;
-    overflow: hidden;
-    overflow-y: scroll;
+    overflow: scroll;
     /* has to be scroll, not auto */
     -webkit-overflow-scrolling: touch;
 }
@@ -162,7 +163,7 @@ main {
     main {
         background: url(/images/gifhaar.gif);
         background-size: 100%;
-        background-repeat: repeat;
+        background-repeat: repeat-y;
         background-position: left;
         background-attachment: fixed;
         background-color: white;
@@ -197,6 +198,10 @@ li img:nth-child(1) {
     width: 4%;
 }
 
+section footer img {
+    z-index: -60;
+}
+
 li a {
     color: grey;
     display: inline;
@@ -212,22 +217,67 @@ li a:hover {
     color: #1F4C9C;
 }
 
+/*styling van de p's naar de vormgeving van het verhaal*/
+
 p {
-    max-width: 375px;
+    max-width: 385px;
     background-color: white;
-    z-index: -10;
+    z-index: 0;
+    margin-left: 2em;
     opacity: .9;
-    margin-left: 3em;
 }
 
 
 p:nth-of-type(1) {
-    margin-top: 18em;
-    margin-left: 6em;
+    margin-left: 4.2em;
+    margin-top: 61%;
+    font-family: Avenir medium;
+}
+
+p:nth-of-type(2) {
+    font-family: Avenir light;
+}
+
+p:nth-of-type(3) {
+    font-family: Avenir medium;
+}
+
+p:nth-of-type(4) {
+    font-family: Avenir medium oblique;
+    font-size: 1.1em;
+}
+
+p:nth-of-type(5) {
+    font-family: Avenir light oblique;
+
+}
+
+p:nth-of-type(6) {
+    margin-bottom: 4em;
+}
+
+p:nth-of-type(6) span {
+    opacity: 1;
+    background-color: black;
+    color: white;
+}
+
+p:nth-of-type(7) {
+    text-align: center;
+    opacity: .9;
 }
 
 
-section {
+
+@media (min-width: 51em) {
+    section p:nth-of-type(1) {
+        margin-top: 78%;
+        margin-left: 5.9em;
+    }
+}
+
+
+*/ section {
     margin: auto;
     max-width: 375px;
 }
@@ -239,25 +289,29 @@ section footer {
 
 }
 
-section footer p {
-    display: block;
-    padding: .1em;
-    margin-right: 5em;
-    font-size: 1.2em;
-    text-align: center;
-    margin-bottom: 8em;
-}
+/*styling van de link naar de pagina over Max Molovich*/
 
-section footer a {
+section footer a:first-of-type {
     display: block;
     text-decoration: none;
     color: #204F80;
     font-size: 1.4em;
     padding: .1em;
+    margin-top: 2em;
     background-color: white;
     text-align: center;
+}
 
 
+section footer a:nth-of-type(2) {
+    display: block;
+    text-decoration: none;
+    color: #343334;
+    font-size: 1.2em;
+    padding: .1em;
+    margin-top: 2em;
+    background-color: white;
+    text-align: center;
 }
 
 

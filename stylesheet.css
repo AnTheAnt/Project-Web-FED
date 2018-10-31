@@ -540,30 +540,31 @@ figure:hover {
 
 /* de download actie gekoppeld aan svg bestand uit html en werkend gemnaakt met js*/
 
-#loadingProgressG {
+.loadingProgressG {
     display: none;
-    margin-top: 5em;
+    margin-top: -19em;
     width: 243px;
-    height: 19px;
+    height: 25px;
     overflow: hidden;
     background-color: rgb(234, 236, 238, 1);
-    border-radius: 1px;
+    border-radius: 2px;
     -webkit-border-radius: 1px;
     -moz-border-radius: 1px;
 }
 
-#loadingProgressG.active {
+.loadingProgressG.active {
     display: inline-block;
-    margin-top: 5em;
-    width: 250px;
-    height: 19px;
-    overflow: hidden;
+    width: 300px;
+    height: 25px;
+    overflow: ;
+    z-index: 50;
+    margin-top: .4em;
 }
 
 
-#loadingProgressG_1 {
+.loadingProgressG_1 {
     background-color: rgba(99, 202, 64, 1);
-    margin-top: 0;
+    padding-bottom: 3em;
     animation-name: bounce_loadingProgressG;
     -webkit-animation-name: bounce_loadingProgressG;
     -moz-animation-name: bounce_loadingProgressG;
@@ -576,11 +577,21 @@ figure:hover {
     animation-timing-function: ease-in;
     -webkit-animation-timing-function: ease-in;
     -moz-animation-timing-function: linear;
-    width: 249px;
-    height: 18px;
+    width: 299px;
+    height: 25px;
+    opacity: .9;
     border-top: .1px solid grey;
     border-bottom: .2px solid grey;
     border-right: .2px solid grey;
+}
+
+.loadingProgressG_1:after {
+    content: "Download gereed";
+    color: white;
+    display: block;
+    font-size: .9em;
+    margin-left: .3em;
+    position: relative;
 }
 
 
@@ -603,6 +614,7 @@ svg {
     display: block;
     position: absolute;
     margin-top: 1em;
+    margin-left: 3em;
     justify-content: flex-start;
     transition: all 0.4s;
     z-index: 20;
@@ -657,8 +669,6 @@ svg.active {
 
 svg:hover {
     transform: translate(0, -10px);
-    border: 1px solid #EAECEE;
-    box-shadow: 5px 2px #AFB5BD;
 }
 
 
@@ -696,7 +706,7 @@ section article footer p {
     font-size: .9em;
     margin-top: -1.3em;
     padding-bottom: 1em;
-    padding-top: 2em;
+    padding-top: 3em;
     text-align: center;
     width: auto;
 }
