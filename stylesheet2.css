@@ -83,35 +83,14 @@ input[type=password] {
     outline: 0;
     padding: .2em;
     background-color: grey;
-    box-shadow: 0;
     margin-bottom: .1em;
     width: 100%;
     padding: .35em .5em;
-    border: 1px solid #ccc;
+    border: solid 1px #ccc;
     border-radius: 2px;
     background: #fcfcfc;
     box-shadow: inset 1px 1px 5px rgba(0, 0, 0, .05);
 }
-
-
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-
-    &:valid background: url(images/Gif%20succes.gif);
-    background-size: 20px;
-    background-repeat: no-repeat;
-    background-position: 20px 20px;
-}
-
-& + label {
-    opacity: 0;
-}
-
-}
-
-}
-
 
 
 
@@ -140,10 +119,10 @@ button[type=submit] {
     font-weight: 700;
     font-size: 1.1em;
     width: 100%;
-    border: 1px solid #ccc;
+    border: solid 1px #ccc;
     border-radius: 2px;
     padding: .4em .5em;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: 1px 1px 1px #204F80;
     text-align: center;
     display: inline-block;
     background-color: #f6861f;

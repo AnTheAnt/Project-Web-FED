@@ -147,7 +147,6 @@ main {
     background-color: white;
     margin: auto;
     max-width: 375px;
-    padding: auto;
     background: url(/images/gifhaar.gif);
     background-repeat: no-repeat;
     background-size: auto 90%;
@@ -277,10 +276,6 @@ p:nth-of-type(7) {
 }
 
 
-*/ section {
-    margin: auto;
-    max-width: 375px;
-}
 
 section footer {
     width: 100%;

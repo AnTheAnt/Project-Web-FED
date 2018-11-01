@@ -8,7 +8,6 @@ body {
     background-color: #EAEDEE;
     margin: auto;
     margin-top: 1em;
-    padding: auto;
 }
 
 
@@ -133,7 +132,6 @@ input[type=text] {
     outline: 0;
     padding: .2em;
     background-color: grey;
-    box-shadow: 0;
     margin-bottom: .1em;
     width: 100%;
     padding: .35em .5em;
@@ -159,7 +157,7 @@ button[type=submit] {
     height: 2em;
     font-family: "Segoe UI", "Lucida Grande", "Helvetica Neue", Arial, sans-serif;
     font-size: 1em;
-    font-weight: 550;
+    font-weight: bolder;
     text-align: center;
     background-color: #E78B3B;
     display: block;
@@ -180,7 +178,7 @@ button:focus {
     background-color: whitesmoke;
     color: #204F80;
     text-align: center;
-    font-weight: 550;
+    font-weight: bolder;
 }
 
 button:focus {
@@ -546,7 +544,7 @@ figure:hover {
     width: 243px;
     height: 25px;
     overflow: hidden;
-    background-color: rgb(234, 236, 238, 1);
+    background-color: rgb(234, 236, 238);
     border-radius: 2px;
     -webkit-border-radius: 1px;
     -moz-border-radius: 1px;
@@ -580,9 +578,9 @@ figure:hover {
     width: 299px;
     height: 25px;
     opacity: .9;
-    border-top: .1px solid grey;
-    border-bottom: .2px solid grey;
-    border-right: .2px solid grey;
+    border-top: solid .1px grey;
+    border-bottom: solid .2px grey;
+    border-right: solid .2px grey;
 }
 
 .loadingProgressG_1:after {
