@@ -443,10 +443,11 @@ article {
 }
 
 
+
 p {
-    font-size: 1.1em;
+    font-size: 1em;
     background-color: white;
-    padding: .5em;
+    padding: .8em;
     padding-bottom: 4.5em;
     max-height: 4em;
 }
@@ -611,57 +612,28 @@ figure:hover {
 svg {
     display: block;
     position: absolute;
-    margin-top: 1em;
-    margin-left: 3em;
-    justify-content: flex-start;
+    margin-top: 2em;
     transition: all 0.4s;
     z-index: 20;
+    height: 4%;
+    margin-left: 15em;
 }
 
 
-@media (max-width: 24em) {
-    svg {
-        margin-left: 12.8em;
-        height: 7%;
-        width: 7%;
-
-    }
-}
-
-
-@media (max-width: 204em) {
-    svg {
-        margin-left: 14em;
-        height: 5%;
-    }
-}
-
-
-/* wanneer de svg is geactiveer zal deze naar boven in op de afbeelding van het e=verhaal gaan staan. En verschijnt er boven naast favorieten een vinkje*/
+/* wanneer de svg is geactiveerd zal deze naar boven in op de afbeelding van het e=verhaal gaan staan. En verschijnt er boven naast favorieten een vinkje*/
 
 svg.active {
-    transform: translate(20px, -360px);
-    transform: translate(20px, -360px);
+    transform: translate(25px, -310px);
+    transform: translate(25px, -310px);
     fill: #E78B3B;
 }
 
 .download {
-    margin-left: 11em;
-    box-shadow: 2px solid grey;
-    opacity: .8;
-    padding: .1em;
-    margin-top: 1em;
-    width: 4%;
+    margin-top: 2em;
+    width: 7%;
     position: absolute;
     display: block;
-}
-
-
-@media and screen (max-width 204em) {
-
-    .download {
-        margin-left: 12em;
-    }
+    margin-left: 1em;
 }
 
 
@@ -674,10 +646,18 @@ svg:hover {
 h3 {
     text-align: right;
     color: white;
-    padding-top: 8em;
-    font-size: 1.5em;
-    padding-right: .4em;
+    padding-top: 9.6em;
+    font-size: 1.3em;
+    padding-right: .3em;
     z-index: 40;
+}
+
+.lang {
+    font-size: 1.3em;
+    color: white;
+    padding-top: 4.4em;
+    padding-right: 0.2em;
+    text-align: right;
 }
 
 
@@ -718,6 +698,7 @@ body main footer a {
     font-size: 1.3em;
     background-color: white;
     text-align: center;
+    cursor: pointer;
 }
 
 
