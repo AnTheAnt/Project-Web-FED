@@ -20,11 +20,19 @@ for (var i = 0; i < downloadKnoppen.length; i++) {
 function downloadPress(event) {
     loader = document.querySelector(".loadingProgressG");
     loader.classList.add('active')
+
+    setTimeout(function () {
+        activeerIcoon()
+    }, 6200);
+}
+
+function activeerIcoon() {
+    var icon = document.querySelector(".icoon");
+    icon.classList.add('active')
 }
 
 function opslaan(event) {
-    var icon = document.querySelector(".icoon");
-    icon.classList.add('active')
+    activeerIcoon(event)
     bookMark(event)
 }
 

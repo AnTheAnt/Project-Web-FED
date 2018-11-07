@@ -79,12 +79,16 @@ form {
 form:nth-child(1) {
     background-color: white;
     padding-bottom: .1em;
-    padding-right: .2em;
+    padding-right: .4em;
+    padding-left: .4em;
 }
 
 form:nth-child(2) {
     padding-bottom: .9em;
     justify-content: flex-start;
+    padding-top: .99em;
+    padding-left: 1.01em;
+    padding-right: 1em;
 }
 
 [type=submit]:nth-child(2) {
@@ -94,7 +98,7 @@ form:nth-child(2) {
 }
 
 fieldset {
-    margin-bottom: 2em;
+    margin-bottom: 1.1em;
     border: none;
 }
 
@@ -128,8 +132,8 @@ input[type=checkbox] {
 input[type=text] {
     font-size: 1.2em;
     height: auto;
-    margin: 0;
-    outline: 0;
+    margin: auto;
+    outline: 3;
     padding: .2em;
     background-color: grey;
     margin-bottom: .1em;
@@ -141,13 +145,6 @@ input[type=text] {
     box-shadow: inset 1px 1px 5px rgba(0, 0, 0, .05);
 }
 
-/*
-@media screen and (min-width: 550px) {
-    form {
-        max-width: 345px;
-    }
-}
-*/
 
 /*buttons voor toon resultaten en de zoek button naast het zoekveld, laatste formulier*/
 
@@ -163,15 +160,6 @@ button[type=submit] {
     display: block;
 }
 
-/*
-
-@media (max-width: 24em) {
-    button[type=submit] {
-        font-size: .7em;
-
-    }
-}
-*/
 
 button:hover,
 button:focus {
@@ -199,21 +187,6 @@ button::after {
     display: inline;
     margin-left: 1.2em;
 }
-
-
-
-[type=text] {
-    display: inline-flex;
-    flex-flow: column;
-    background-color: white;
-    width: 50em;
-    height: 2em;
-    margin-top: 2em;
-    margin-right: 2em;
-
-}
-
-
 
 
 /* clipping path not supported in safari or firefox. */
@@ -323,15 +296,15 @@ button::after {
 /*border voor de main*/
 
 main {
-    border-right: 4em solid #EAECEE;
-    border-left: 4em solid #EAECEE;
+    border-right: 2em solid #EAECEE;
+    border-left: 2em solid #EAECEE;
 
 }
 
 @media (max-width: 30em) {
     main {
-        border-right: 1em solid #EAECEE;
-        border-left: 1em solid #EAECEE;
+        border-right: .5em solid #EAECEE;
+        border-left: .5em solid #EAECEE;
     }
 }
 
@@ -427,7 +400,9 @@ section {
 article {
     min-width: 20em;
     max-width: 20em;
-    padding: 2em;
+    padding-bottom: 2em;
+    padding-left: .5em;
+    padding-right: .5em;
 
 }
 
@@ -612,13 +587,12 @@ figure:hover {
 svg {
     display: block;
     position: absolute;
-    margin-top: 2em;
+    margin-top: -2em;
     transition: all 0.4s;
     z-index: 20;
     height: 4%;
-    margin-left: 15em;
+    margin-left: 15.4em;
 }
-
 
 /* wanneer de svg is geactiveerd zal deze naar boven in op de afbeelding van het e=verhaal gaan staan. En verschijnt er boven naast favorieten een vinkje*/
 
@@ -629,7 +603,7 @@ svg.active {
 }
 
 .download {
-    margin-top: 2em;
+    margin-top: -2em;
     width: 7%;
     position: absolute;
     display: block;
@@ -640,7 +614,6 @@ svg.active {
 svg:hover {
     transform: translate(0, -10px);
 }
-
 
 
 h3 {
@@ -674,7 +647,6 @@ h4 {
     padding: 2em;
     margin: auto;
     margin-top: .4em;
-
 }
 
 /* de footer van de verhalen*/
