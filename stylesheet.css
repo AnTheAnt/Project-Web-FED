@@ -217,8 +217,8 @@ button::after {
         top: 0;
         bottom: 0;
         padding-top: 9em;
-        -webkit-clip-path: inset(65% 0% 12.6% 0%);
-        clip-path: inset(65% 0% 12.6% 0%);
+        -webkit-clip-path: inset(65% 0% 13.1% 0%);
+        clip-path: inset(65% 0% 13.1% 0%);
 
     }
 }
@@ -464,7 +464,7 @@ figure::after {
     top: 0;
     width: 100%;
     -webkit-clip-path: polygon (65% 0%, 100% 0%, 100% 100%, 309% 100%);
-    clip-path: polygon(65% 0%, 100% 0%, 100% 100%, 30% 100%);
+    clip-path: polygon(65% 0%, 100% 0%, 100% 100%, 29% 100%);
     opacity: 0.7;
     background: #36214B;
     z-index: 0;
@@ -594,14 +594,14 @@ svg {
     transition: all 0.4s;
     z-index: 20;
     height: 5%;
-    margin-left: 15.4em;
+    margin-left: 15em;
 }
 
 /* wanneer de svg is geactiveerd zal deze naar boven in op de afbeelding van het e=verhaal gaan staan. En verschijnt er boven naast favorieten een vinkje*/
 
 svg.active {
-    transform: translate(25px, -310px);
-    transform: translate(25px, -310px);
+    transform: translate(25px, -300px);
+    transform: translate(25px, -300px);
     fill: #E78B3B;
 }
 
@@ -610,7 +610,7 @@ svg.active {
     height: 5%;
     position: absolute;
     display: block;
-    margin-left: 2em;
+    margin-left: 7em;
 }
 
 
