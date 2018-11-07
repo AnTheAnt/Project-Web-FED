@@ -2,6 +2,7 @@ html {
     scroll-behavior: smooth;
 
 
+
     /* fira-sans-100 - latin */
     @font-face {
         font-family: 'Fira Sans';
@@ -210,6 +211,28 @@ html {
     -moz-osx-font-smoothing: grayscale;
 }
 
+nav {
+    background-color: white;
+    padding-bottom: 2em;
+}
+
+nav img {
+    width: 10%;
+    margin-left: 4em;
+}
+
+
+nav li {
+    display: inline;
+}
+
+
+li img:nth-child(1) {
+    display: inline;
+    margin-left: -2.1em;
+    height: 6%;
+    width: 4%;
+}
 
 .container {
     position: relative;
@@ -233,31 +256,30 @@ p {
 
 @media screen and (max-width: 65.75em) {
     .container .haar {
-        margin-left: 16em;
-        width: 50vw;
+        margin-left: 7em;
+        width: 70vw;
     }
 }
 
 @media screen and (max-width: 23.4375em) {
     .container .haar {
-        margin-left: 5em;
+        margin-left: 2em;
         width: 70vw;
     }
 }
 
 
 .asfalt {
-    width: 26vw;
     z-index: -2;
     position: absolute;
     margin-top: -31.9em;
-    min-width: 26vw;
+    width: 30vw;
 }
 
 @media screen and (max-width: 65.75em) {
     article .asfalt {
         margin-left: 1em;
-        width: 40vw;
+        width: 60vw;
         margin-top: -4em;
     }
 }
@@ -265,7 +287,7 @@ p {
 
 @media screen and (max-width: 23.4375em) {
     article .asfalt {
-        width: 70vw;
+        width: 60vw;
     }
 }
 
@@ -358,8 +380,7 @@ p {
 
 .iconB:before {
     content: "\e904";
-    top: 0;
-    margin-top: .038em;
+    margin-top: -.09em;
     color: #9C9D9B;
     margin-left: 1.27em;
     font-size: 28vw;
@@ -490,8 +511,6 @@ p {
 }
 
 
-
-
 @media screen and (max-width: 65.75em) {
     header .icond:before {
         margin-left: 1.99em;
@@ -524,7 +543,7 @@ p:nth-of-type(1) {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 400;
     z-index: 0;
-    width: 30em;
+    width: 30%;
 }
 
 @media screen and (max-width: 64.75em) {
@@ -532,7 +551,7 @@ p:nth-of-type(1) {
         margin-left: 3.9%;
         opacity: .9;
         margin-top: 31%;
-        width: 60%;
+        width: 70%;
         font-size: .8em;
     }
 }
@@ -540,9 +559,10 @@ p:nth-of-type(1) {
 
 @media screen and (max-width: 23.4375em) {
     .container p:nth-of-type(1) {
-        width: 90%;
-        margin-top: 10.1em;
-        font-size: .8em;
+        width: 100%;
+        margin-left: 1.2em;
+        margin-top: 7.1em;
+        font-size: 1.1em;
     }
 }
 
@@ -553,6 +573,7 @@ p:nth-of-type(2) {
     width: 40%;
     margin-top: 4.9em;
     margin-left: 26.2em;
+    opacity: .96;
     z-index: 0;
 }
 
@@ -561,16 +582,17 @@ p:nth-of-type(2) {
         margin-left: 1.5%;
         opacity: .99;
         margin-top: 2%;
-        width: 60%;
-        font-size: .8em;
+        width: 75%;
+        font-size: .9em;
 
     }
 }
 
 @media screen and (max-width: 23.4375em) {
     .container p:nth-of-type(2) {
-        width: 6%;
-        font-size: 1em;
+        width: 90%;
+        font-size: 1.1em;
+        opacity: .9em;
     }
 }
 
@@ -579,13 +601,15 @@ p:nth-of-type(3) {
     font-weight: 400;
     margin-left: 11%;
     font-size: .88em;
+    width: 36%;
+    opacity: .97;
 }
 
 @media screen and (max-width: 65.75em) {
     .container p:nth-of-type(3) {
         margin-left: 10%;
         margin-top: 1%;
-        width: 60%;
+        width: 65%;
         font-size: .8em;
     }
 }
@@ -594,34 +618,35 @@ p:nth-of-type(3) {
     .container p:nth-of-type(3) {
         width: 84%;
         margin-left: 5%;
-        font-size: .8em;
+        font-size: 1.1em;
+        opacity: .96;
     }
 }
 
 p:nth-of-type(4) {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 500;
-    width: 15.6%;
+    width: 17%;
     margin-top: 1em;
     margin-left: 30em;
-    font-size: 1em;
+    font-size: 1.1em;
 }
 
 @media screen and (max-width: 65.75em) {
     .container p:nth-of-type(4) {
         margin-left: 27%;
         width: 65%;
-        margin-top: 3%;
-        font-size: .8em;
+        margin-top: 4%;
+        font-size: .9em;
     }
 }
 
 @media screen and (max-width: 23.4375em) {
     .container p:nth-of-type(4) {
-        width: 77%;
+        width: 86%;
         margin-top: 1em;
-        margin-left: 17%;
-        font-size: .9em;
+        margin-left: 13%;
+        font-size: 1.12em;
     }
 }
 
@@ -646,7 +671,7 @@ p:nth-of-type(5) {
 @media screen and (max-width: 23.4375em) {
     .container p:nth-of-type(5) {
         width: 92%;
-        font-size: .84em;
+        font-size: 1.1em;
     }
 }
 
@@ -654,9 +679,10 @@ p:nth-of-type(6) {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 400;
     margin-left: 28em;
-    max-width: 400px;
+    width: 35%;
     line-height: 1.4;
     font-size: .88em;
+    opacity: .97;
 }
 
 
@@ -669,9 +695,9 @@ p:nth-of-type(6) span {
 
 @media screen and (max-width: 65.75em) {
     .container p:nth-of-type(6) {
-        margin-left: 10%;
-        font-size: 1.3wv;
-        width: 100%;
+        margin-left: 9%;
+        font-size: .88em;
+        width: 80%;
         margin-top: 2%;
     }
 }
@@ -680,7 +706,7 @@ p:nth-of-type(6) span {
     .container p:nth-of-type(6) {
         width: 91%;
         margin-left: 1em;
-        font-size: 1.2vw;
+        font-size: 1.1em;
     }
 }
 
@@ -689,23 +715,74 @@ p:nth-of-type(7) {
     font-family: 'Fira Sans', sans-serif;
     font-weight: 600;
     text-align: left;
-    margin-left: 30%;
-    width: 9%;
+    margin-left: 45%;
+    width: 10%;
 }
 
 @media screen and (max-width: 65.75em) {
     .container p:nth-of-type(7) {
         margin-left: 24%;
-        width: 40%;
+        width: 45%;
         margin-top: 10%;
-        font-size: 1.3wv;
+        font-size: 1.2em;
         ;
     }
 }
 
 @media screen and (max-width: 23.4375em) {
     .container p:nth-of-type(7) {
-        width: 42%;
-        font-size: .8em;
+        width: 52%;
+        font-size: 1.2emem;
     }
+}
+
+article footer a:first-of-type {
+    display: block;
+    text-decoration: none;
+    color: #204F80;
+    font-size: 1.2em;
+    padding: .1em;
+    margin-top: 8em;
+    background-color: white;
+    text-align: center;
+}
+
+
+article footer a {
+    display: block;
+    text-decoration: none;
+    color: #343334;
+    font-size: 1.2em;
+    padding: .01em;
+    margin-top: 7em;
+    background-color: white;
+    text-align: center;
+}
+
+
+
+
+body footer:nth-child(3) {
+    background-color: #005184;
+    bottom: 0;
+    width: 100%;
+    background-color: #005184;
+    margin-top: 8em;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+body footer ul:nth-child(3) {
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding: 0;
+    display: block;
+    list-style-type: disc;
+    margin-left: 2em;
+}
+
+body footer:nth-child(3) li {
+    list-style: none;
+    font-size: 1em;
+    color: #fff;
 }

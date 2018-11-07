@@ -516,7 +516,7 @@ figure:hover {
 
 .loadingProgressG {
     display: none;
-    margin-top: -19em;
+    margin-top: -1em;
     width: 243px;
     height: 25px;
     overflow: hidden;
@@ -530,9 +530,11 @@ figure:hover {
     display: inline-block;
     width: 300px;
     height: 25px;
-    overflow: ;
-    z-index: 50;
-    margin-top: .4em;
+    background-color: white;
+    overflow: hidden;
+    z-index: 5;
+    padding-top: 1em;
+    padding-right: 1.28em;
 }
 
 
@@ -557,6 +559,7 @@ figure:hover {
     border-top: solid .1px grey;
     border-bottom: solid .2px grey;
     border-right: solid .2px grey;
+    margin-left: .6em;
 }
 
 .loadingProgressG_1:after {
@@ -587,10 +590,10 @@ figure:hover {
 svg {
     display: block;
     position: absolute;
-    margin-top: -2em;
+    margin-top: -4em;
     transition: all 0.4s;
     z-index: 20;
-    height: 4%;
+    height: 5%;
     margin-left: 15.4em;
 }
 
@@ -603,11 +606,11 @@ svg.active {
 }
 
 .download {
-    margin-top: -2em;
-    width: 7%;
+    width: 10%;
+    height: 5%;
     position: absolute;
     display: block;
-    margin-left: 1em;
+    margin-left: 2em;
 }
 
 
